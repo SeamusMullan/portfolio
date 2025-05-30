@@ -1,14 +1,8 @@
 # Portfolio Website
 
-This is a Hugo-based portfolio website using the Blowfish theme.
+This is my portfolio website using Hugo and the Blowfish theme.
 
 ## Development
-
-To run the site locally:
-
-```bash
-npm run dev
-```
 
 To build the site for production:
 

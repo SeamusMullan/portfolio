@@ -1,1 +1,483 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Portfolio</title><link>portfolio.direktdsp.com/tags/</link><description>Recent content in Tags on Portfolio</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© 2025 Seamus Mullan</copyright><lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="portfolio.direktdsp.com/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Example</title><link>portfolio.direktdsp.com/tags/example/</link><pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate><guid>portfolio.direktdsp.com/tags/example/</guid><description/></item><item><title>Tag</title><link>portfolio.direktdsp.com/tags/tag/</link><pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate><guid>portfolio.direktdsp.com/tags/tag/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Portfolio</title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 Seamus Mullan</copyright>
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ai</title>
+      <link>//localhost:1313/tags/ai/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/ai/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Algorithms</title>
+      <link>//localhost:1313/tags/algorithms/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/algorithms/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Analytics</title>
+      <link>//localhost:1313/tags/analytics/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/analytics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Au</title>
+      <link>//localhost:1313/tags/au/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/au/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Audio</title>
+      <link>//localhost:1313/tags/audio/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/audio/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Audio-Plugin</title>
+      <link>//localhost:1313/tags/audio-plugin/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/audio-plugin/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>//localhost:1313/tags/automation/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/automation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>//localhost:1313/tags/c/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/c/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cli</title>
+      <link>//localhost:1313/tags/cli/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/cli/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cross-Platform</title>
+      <link>//localhost:1313/tags/cross-platform/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/cross-platform/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Data-Science</title>
+      <link>//localhost:1313/tags/data-science/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/data-science/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Desktop</title>
+      <link>//localhost:1313/tags/desktop/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/desktop/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Electron</title>
+      <link>//localhost:1313/tags/electron/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/electron/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Fastapi</title>
+      <link>//localhost:1313/tags/fastapi/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/fastapi/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Financial-Modeling</title>
+      <link>//localhost:1313/tags/financial-modeling/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/financial-modeling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Fintech</title>
+      <link>//localhost:1313/tags/fintech/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/fintech/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Frontend</title>
+      <link>//localhost:1313/tags/frontend/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/frontend/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Game-Development</title>
+      <link>//localhost:1313/tags/game-development/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/game-development/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>//localhost:1313/tags/graphics/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/graphics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>//localhost:1313/tags/hugo/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/hugo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Image-Processing</title>
+      <link>//localhost:1313/tags/image-processing/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/image-processing/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Low-Level</title>
+      <link>//localhost:1313/tags/low-level/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/low-level/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Machine-Learning</title>
+      <link>//localhost:1313/tags/machine-learning/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nextjs</title>
+      <link>//localhost:1313/tags/nextjs/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/nextjs/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Npm</title>
+      <link>//localhost:1313/tags/npm/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/npm/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Performance</title>
+      <link>//localhost:1313/tags/performance/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/performance/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Plugin</title>
+      <link>//localhost:1313/tags/plugin/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/plugin/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Portfolio</title>
+      <link>//localhost:1313/tags/portfolio/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/portfolio/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Prediction</title>
+      <link>//localhost:1313/tags/prediction/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/prediction/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>//localhost:1313/tags/python/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/python/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Raylib</title>
+      <link>//localhost:1313/tags/raylib/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/raylib/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>//localhost:1313/tags/react/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/react/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Real-Time</title>
+      <link>//localhost:1313/tags/real-time/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/real-time/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Responsive-Design</title>
+      <link>//localhost:1313/tags/responsive-design/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/responsive-design/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Scraping</title>
+      <link>//localhost:1313/tags/scraping/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/scraping/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Selenium</title>
+      <link>//localhost:1313/tags/selenium/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/selenium/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Simulation</title>
+      <link>//localhost:1313/tags/simulation/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/simulation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Social-Media</title>
+      <link>//localhost:1313/tags/social-media/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/social-media/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Systems-Programming</title>
+      <link>//localhost:1313/tags/systems-programming/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/systems-programming/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Template</title>
+      <link>//localhost:1313/tags/template/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/template/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Trading</title>
+      <link>//localhost:1313/tags/trading/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/trading/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ui-Ux</title>
+      <link>//localhost:1313/tags/ui-ux/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/ui-ux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Vite</title>
+      <link>//localhost:1313/tags/vite/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/vite/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Vst</title>
+      <link>//localhost:1313/tags/vst/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/vst/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Vst3</title>
+      <link>//localhost:1313/tags/vst3/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/vst3/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web-Development</title>
+      <link>//localhost:1313/tags/web-development/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/web-development/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web-Scraping</title>
+      <link>//localhost:1313/tags/web-scraping/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/tags/web-scraping/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
