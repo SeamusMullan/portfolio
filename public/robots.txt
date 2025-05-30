@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: portfolio.direktdsp.com/sitemap.xml

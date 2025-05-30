@@ -1,0 +1,29 @@
+[[main]]
+none = "none"
+
+[[main]]
+name = "Projects"
+pageRef = "projects"
+identifier = "wcXnEOprtV"
+weight = 9_999
+
+[[footer]]
+none = "none"
+
+[[footer]]
+name = "Contact"
+pageRef = "contact"
+identifier = "2w6MEs97Kq"
+weight = 9_999
+
+[[footer]]
+name = "GitHub"
+url = "https://github.com/seamusmullan"
+identifier = "lCj2Gu0Yct"
+weight = 9_999
+
+[[footer]]
+name = "DirektDSP"
+url = "https://direktdsp.com"
+identifier = "FqwmWcDczO"
+weight = 9_999
