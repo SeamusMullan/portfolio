@@ -2,479 +2,519 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Portfolio</title>
-    <link>//localhost:1313/tags/</link>
+    <link>portfolio.direktdsp.com/tags/</link>
     <description>Recent content in Tags on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Seamus Mullan</copyright>
-    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="portfolio.direktdsp.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ai</title>
-      <link>//localhost:1313/tags/ai/</link>
+      <link>portfolio.direktdsp.com/tags/ai/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/ai/</guid>
+      <guid>portfolio.direktdsp.com/tags/ai/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Algorithms</title>
-      <link>//localhost:1313/tags/algorithms/</link>
+      <link>portfolio.direktdsp.com/tags/algorithms/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/algorithms/</guid>
+      <guid>portfolio.direktdsp.com/tags/algorithms/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Analytics</title>
-      <link>//localhost:1313/tags/analytics/</link>
+      <link>portfolio.direktdsp.com/tags/analytics/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/analytics/</guid>
+      <guid>portfolio.direktdsp.com/tags/analytics/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Au</title>
-      <link>//localhost:1313/tags/au/</link>
+      <link>portfolio.direktdsp.com/tags/au/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/au/</guid>
+      <guid>portfolio.direktdsp.com/tags/au/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Audio</title>
-      <link>//localhost:1313/tags/audio/</link>
+      <link>portfolio.direktdsp.com/tags/audio/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/audio/</guid>
+      <guid>portfolio.direktdsp.com/tags/audio/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Audio-Engineering</title>
+      <link>portfolio.direktdsp.com/tags/audio-engineering/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>portfolio.direktdsp.com/tags/audio-engineering/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Audio-Plugin</title>
-      <link>//localhost:1313/tags/audio-plugin/</link>
+      <link>portfolio.direktdsp.com/tags/audio-plugin/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/audio-plugin/</guid>
+      <guid>portfolio.direktdsp.com/tags/audio-plugin/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Automation</title>
-      <link>//localhost:1313/tags/automation/</link>
+      <link>portfolio.direktdsp.com/tags/automation/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/automation/</guid>
+      <guid>portfolio.direktdsp.com/tags/automation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>C</title>
-      <link>//localhost:1313/tags/c/</link>
+      <link>portfolio.direktdsp.com/tags/c/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/c/</guid>
+      <guid>portfolio.direktdsp.com/tags/c/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>portfolio.direktdsp.com/tags/c&#43;&#43;/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>portfolio.direktdsp.com/tags/c&#43;&#43;/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Cli</title>
-      <link>//localhost:1313/tags/cli/</link>
+      <link>portfolio.direktdsp.com/tags/cli/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/cli/</guid>
+      <guid>portfolio.direktdsp.com/tags/cli/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Cross-Platform</title>
-      <link>//localhost:1313/tags/cross-platform/</link>
+      <link>portfolio.direktdsp.com/tags/cross-platform/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/cross-platform/</guid>
+      <guid>portfolio.direktdsp.com/tags/cross-platform/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Data-Science</title>
-      <link>//localhost:1313/tags/data-science/</link>
+      <link>portfolio.direktdsp.com/tags/data-science/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/data-science/</guid>
+      <guid>portfolio.direktdsp.com/tags/data-science/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Desktop</title>
-      <link>//localhost:1313/tags/desktop/</link>
+      <link>portfolio.direktdsp.com/tags/desktop/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/desktop/</guid>
+      <guid>portfolio.direktdsp.com/tags/desktop/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Dsp</title>
+      <link>portfolio.direktdsp.com/tags/dsp/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>portfolio.direktdsp.com/tags/dsp/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Electron</title>
-      <link>//localhost:1313/tags/electron/</link>
+      <link>portfolio.direktdsp.com/tags/electron/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/electron/</guid>
+      <guid>portfolio.direktdsp.com/tags/electron/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Fastapi</title>
-      <link>//localhost:1313/tags/fastapi/</link>
+      <link>portfolio.direktdsp.com/tags/fastapi/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/fastapi/</guid>
+      <guid>portfolio.direktdsp.com/tags/fastapi/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Financial-Modeling</title>
-      <link>//localhost:1313/tags/financial-modeling/</link>
+      <link>portfolio.direktdsp.com/tags/financial-modeling/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/financial-modeling/</guid>
+      <guid>portfolio.direktdsp.com/tags/financial-modeling/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Fintech</title>
-      <link>//localhost:1313/tags/fintech/</link>
+      <link>portfolio.direktdsp.com/tags/fintech/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/fintech/</guid>
+      <guid>portfolio.direktdsp.com/tags/fintech/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Frontend</title>
-      <link>//localhost:1313/tags/frontend/</link>
+      <link>portfolio.direktdsp.com/tags/frontend/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/frontend/</guid>
+      <guid>portfolio.direktdsp.com/tags/frontend/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Game-Development</title>
-      <link>//localhost:1313/tags/game-development/</link>
+      <link>portfolio.direktdsp.com/tags/game-development/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/game-development/</guid>
+      <guid>portfolio.direktdsp.com/tags/game-development/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Graphics</title>
-      <link>//localhost:1313/tags/graphics/</link>
+      <link>portfolio.direktdsp.com/tags/graphics/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/graphics/</guid>
+      <guid>portfolio.direktdsp.com/tags/graphics/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>//localhost:1313/tags/hugo/</link>
+      <link>portfolio.direktdsp.com/tags/hugo/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/hugo/</guid>
+      <guid>portfolio.direktdsp.com/tags/hugo/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Image-Processing</title>
-      <link>//localhost:1313/tags/image-processing/</link>
+      <link>portfolio.direktdsp.com/tags/image-processing/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/image-processing/</guid>
+      <guid>portfolio.direktdsp.com/tags/image-processing/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Low-Level</title>
-      <link>//localhost:1313/tags/low-level/</link>
+      <link>portfolio.direktdsp.com/tags/low-level/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/low-level/</guid>
+      <guid>portfolio.direktdsp.com/tags/low-level/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Machine-Learning</title>
-      <link>//localhost:1313/tags/machine-learning/</link>
+      <link>portfolio.direktdsp.com/tags/machine-learning/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/machine-learning/</guid>
+      <guid>portfolio.direktdsp.com/tags/machine-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Music-Production</title>
+      <link>portfolio.direktdsp.com/tags/music-production/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>portfolio.direktdsp.com/tags/music-production/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Nextjs</title>
-      <link>//localhost:1313/tags/nextjs/</link>
+      <link>portfolio.direktdsp.com/tags/nextjs/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/nextjs/</guid>
+      <guid>portfolio.direktdsp.com/tags/nextjs/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Npm</title>
-      <link>//localhost:1313/tags/npm/</link>
+      <link>portfolio.direktdsp.com/tags/npm/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/npm/</guid>
+      <guid>portfolio.direktdsp.com/tags/npm/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Performance</title>
-      <link>//localhost:1313/tags/performance/</link>
+      <link>portfolio.direktdsp.com/tags/performance/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/performance/</guid>
+      <guid>portfolio.direktdsp.com/tags/performance/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Plugin</title>
-      <link>//localhost:1313/tags/plugin/</link>
+      <link>portfolio.direktdsp.com/tags/plugin/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/plugin/</guid>
+      <guid>portfolio.direktdsp.com/tags/plugin/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Portfolio</title>
-      <link>//localhost:1313/tags/portfolio/</link>
+      <link>portfolio.direktdsp.com/tags/portfolio/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/portfolio/</guid>
+      <guid>portfolio.direktdsp.com/tags/portfolio/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Prediction</title>
-      <link>//localhost:1313/tags/prediction/</link>
+      <link>portfolio.direktdsp.com/tags/prediction/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/prediction/</guid>
+      <guid>portfolio.direktdsp.com/tags/prediction/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Python</title>
-      <link>//localhost:1313/tags/python/</link>
+      <link>portfolio.direktdsp.com/tags/python/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/python/</guid>
+      <guid>portfolio.direktdsp.com/tags/python/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Raylib</title>
-      <link>//localhost:1313/tags/raylib/</link>
+      <link>portfolio.direktdsp.com/tags/raylib/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/raylib/</guid>
+      <guid>portfolio.direktdsp.com/tags/raylib/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>React</title>
-      <link>//localhost:1313/tags/react/</link>
+      <link>portfolio.direktdsp.com/tags/react/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/react/</guid>
+      <guid>portfolio.direktdsp.com/tags/react/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Real-Time</title>
-      <link>//localhost:1313/tags/real-time/</link>
+      <link>portfolio.direktdsp.com/tags/real-time/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/real-time/</guid>
+      <guid>portfolio.direktdsp.com/tags/real-time/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Responsive-Design</title>
-      <link>//localhost:1313/tags/responsive-design/</link>
+      <link>portfolio.direktdsp.com/tags/responsive-design/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/responsive-design/</guid>
+      <guid>portfolio.direktdsp.com/tags/responsive-design/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Scraping</title>
-      <link>//localhost:1313/tags/scraping/</link>
+      <link>portfolio.direktdsp.com/tags/scraping/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/scraping/</guid>
+      <guid>portfolio.direktdsp.com/tags/scraping/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Selenium</title>
-      <link>//localhost:1313/tags/selenium/</link>
+      <link>portfolio.direktdsp.com/tags/selenium/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/selenium/</guid>
+      <guid>portfolio.direktdsp.com/tags/selenium/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Simulation</title>
-      <link>//localhost:1313/tags/simulation/</link>
+      <link>portfolio.direktdsp.com/tags/simulation/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/simulation/</guid>
+      <guid>portfolio.direktdsp.com/tags/simulation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Social-Media</title>
-      <link>//localhost:1313/tags/social-media/</link>
+      <link>portfolio.direktdsp.com/tags/social-media/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/social-media/</guid>
+      <guid>portfolio.direktdsp.com/tags/social-media/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Systems-Programming</title>
-      <link>//localhost:1313/tags/systems-programming/</link>
+      <link>portfolio.direktdsp.com/tags/systems-programming/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/systems-programming/</guid>
+      <guid>portfolio.direktdsp.com/tags/systems-programming/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Template</title>
-      <link>//localhost:1313/tags/template/</link>
+      <link>portfolio.direktdsp.com/tags/template/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/template/</guid>
+      <guid>portfolio.direktdsp.com/tags/template/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Trading</title>
-      <link>//localhost:1313/tags/trading/</link>
+      <link>portfolio.direktdsp.com/tags/trading/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/trading/</guid>
+      <guid>portfolio.direktdsp.com/tags/trading/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ui-Ux</title>
-      <link>//localhost:1313/tags/ui-ux/</link>
+      <link>portfolio.direktdsp.com/tags/ui-ux/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/ui-ux/</guid>
+      <guid>portfolio.direktdsp.com/tags/ui-ux/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Vite</title>
-      <link>//localhost:1313/tags/vite/</link>
+      <link>portfolio.direktdsp.com/tags/vite/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/vite/</guid>
+      <guid>portfolio.direktdsp.com/tags/vite/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Vst</title>
-      <link>//localhost:1313/tags/vst/</link>
+      <link>portfolio.direktdsp.com/tags/vst/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/vst/</guid>
+      <guid>portfolio.direktdsp.com/tags/vst/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Vst3</title>
-      <link>//localhost:1313/tags/vst3/</link>
+      <link>portfolio.direktdsp.com/tags/vst3/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/vst3/</guid>
+      <guid>portfolio.direktdsp.com/tags/vst3/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Web-Development</title>
-      <link>//localhost:1313/tags/web-development/</link>
+      <link>portfolio.direktdsp.com/tags/web-development/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/web-development/</guid>
+      <guid>portfolio.direktdsp.com/tags/web-development/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Web-Scraping</title>
-      <link>//localhost:1313/tags/web-scraping/</link>
+      <link>portfolio.direktdsp.com/tags/web-scraping/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/web-scraping/</guid>
+      <guid>portfolio.direktdsp.com/tags/web-scraping/</guid>
       <description></description>
       
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Image-Processing on Portfolio</title>
-    <link>//localhost:1313/tags/image-processing/</link>
+    <link>portfolio.direktdsp.com/tags/image-processing/</link>
     <description>Recent content in Image-Processing on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Seamus Mullan</copyright>
-    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/image-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="portfolio.direktdsp.com/tags/image-processing/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Pinterest Board Downloader</title>
-      <link>//localhost:1313/projects/1748608350000-pinterest-board-downloader/</link>
+      <link>portfolio.direktdsp.com/projects/1748608350000-pinterest-board-downloader/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/projects/1748608350000-pinterest-board-downloader/</guid>
+      <guid>portfolio.direktdsp.com/projects/1748608350000-pinterest-board-downloader/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="portfolio.direktdsp.com/projects/1748608350000-pinterest-board-downloader/featured.png" />
     </item>
     
   </channel>

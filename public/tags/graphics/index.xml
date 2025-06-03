@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graphics on Portfolio</title>
-    <link>//localhost:1313/tags/graphics/</link>
+    <link>portfolio.direktdsp.com/tags/graphics/</link>
     <description>Recent content in Graphics on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 Seamus Mullan</copyright>
-    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="portfolio.direktdsp.com/tags/graphics/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Boomerman</title>
-      <link>//localhost:1313/projects/1748608331347-boomerman/</link>
+      <link>portfolio.direktdsp.com/projects/1748608331347-boomerman/</link>
       <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/projects/1748608331347-boomerman/</guid>
+      <guid>portfolio.direktdsp.com/projects/1748608331347-boomerman/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/1748608331347-boomerman/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="portfolio.direktdsp.com/projects/1748608331347-boomerman/featured.png" />
     </item>
     
   </channel>
