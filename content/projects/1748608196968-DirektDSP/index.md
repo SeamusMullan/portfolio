@@ -6,8 +6,6 @@ description: "Professional audio software company specializing in high-performan
 tags: ["audio", "plugin", "audio-plugin", "vst3", "vst", "au", "dsp", "music-production", "audio-engineering", "c++"]
 ---
 
-# DirektDSP
-
 Professional audio software company demonstrating expertise in digital signal processing, plugin development, and music technology entrepreneurship
 
 ## Company Overview
