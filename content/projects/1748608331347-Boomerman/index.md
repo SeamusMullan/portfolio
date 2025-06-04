@@ -1,7 +1,7 @@
 ---
 title: "Boomerman"
 date: 2025-05-30
-draft: false
+draft: true 
 description: "High-performance Bomberman recreation in C using Raylib, showcasing low-level programming and game development expertise"
 tags: ["c", "raylib", "game-development", "low-level", "performance", "graphics", "real-time", "systems-programming"]
 ---

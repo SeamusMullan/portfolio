@@ -6,83 +6,35 @@ description: "Professional audio software company specializing in high-performan
 tags: ["audio", "plugin", "audio-plugin", "vst3", "vst", "au", "dsp", "music-production", "audio-engineering", "c++"]
 ---
 
-# DirektDSP 🎵
+# DirektDSP
 
-**Professional audio software company demonstrating expertise in digital signal processing, plugin development, and music technology entrepreneurship**
+Professional audio software company demonstrating expertise in digital signal processing, plugin development, and music technology entrepreneurship
 
 ## Company Overview
 
-DirektDSP represents my **audio engineering expertise** and entrepreneurial capabilities in the highly specialized field of professional audio software development. This company showcases my deep understanding of digital signal processing, audio plugin architecture, and the unique challenges of creating professional-grade tools for music producers, sound engineers, and artists worldwide.
+DirektDSP is my main side project. It is an Audio software company built from the ground up solely by me.
+Throughout the last 2 years of developing this company as a brand I've learned a countless amount of new skills and connected with people in the industry.
+The end goal for this project is to provide a suite of audio plugins that professionals and beginner producers can use effectively for production. 
 
 ## The Audio Software Industry Challenge
 
-The professional audio market demands exceptional technical precision combined with intuitive user experience. Audio plugins must process signals with sub-millisecond latency while supporting multiple plugin formats (VST3, AU, AAX) and meeting the exacting requirements of recording studios and producers.
+Since the audio software industry is such a niche market, mainly filled up with larger companies with teams of developers and budgets larger than my total revenue to date, I needed to adapt and do as much myself as possible.
+Doing this resulted in me learning Photoshop, JUCE, Figma, C++ and a bunch of DSP / maths to make these plugins. Ive also had to dabble with marketing and advertising.
 
 ## Product Portfolio Excellence
 
-### MakeItLoud 📢 - Professional Mastering Suite
-My flagship product demonstrating advanced audio dynamics processing with:
-- **Multiband Compression**: Sophisticated frequency-split dynamics control
-- **Harmonic Enhancement**: Psychoacoustic modeling for perceived loudness
-- **Transparent Limiting**: Mathematical limiting algorithms preventing distortion
-- **Professional Adoption**: Used in major recording studios worldwide with <2% CPU usage
+### MakeItLoud - Easy to use Compressor + Distortion
 
-### Fuzzboy 🎸 - Analog-Modeled Distortion Engine
-Vintage guitar amplifier simulation featuring:
-- **Circuit Simulation**: Mathematical modeling of classic tube amplifier circuits
-- **Vintage Amp Models**: Emulations of classic Fender, Marshall, and Vox amplifiers
-- **Cabinet Simulation**: Impulse response-based speaker cabinet modeling
-- **Dynamic Response**: Touch-sensitive processing responding to playing dynamics
+MakeItLoud is the most recent plugin that I have released and it does one simple thing and it does it well. It makes things loud.
 
-### Hot Potato 🥔 - Creative Multi-Effect Processor
-Experimental sound design tool pushing creative boundaries with:
-- **Granular Synthesis**: Real-time granular manipulation of incoming audio
-- **Spectral Processing**: Frequency domain effects with FFT-based analysis
-- **Morphing Algorithms**: Smooth transitions between different effect states
-- **Generative Patterns**: Algorithmic pattern generation for rhythmic effects
+MakeItLoud is a sneaky combination of compressors and distortions that allows you to absolutely smash signals, make them extremely loud, and avoid clipping on your tracks. The plugin functions by routing the input audio between 2 compressors before and after distortion to ensure the volume is attenuated before it leaves the plugin.
 
-## Technical Excellence & Innovation
+### Fuzzboy - Analog-Modeled Distortion
 
-### Core Technologies
-- **JUCE Framework**: Industry-standard framework for cross-platform audio development
-- **Real-Time Safety**: Lock-free algorithms ensuring glitch-free audio processing
-- **SIMD Optimization**: Vectorized processing for maximum performance efficiency
-- **Psychoacoustic Modeling**: Advanced algorithms based on human auditory perception
+Fuzzboy was the second plugin I ever made. I wanted to take what I had learned from books about audio processing (looking at you Will Pirkle) and implement them into a real plugin.
+I took equations from the section on distortion (namely the asymmetric ones) and implemented them into a simple JUCE plugin. The GUI is made mostly with Photoshop, excluding the preset menu and sliders which are rendered using custom JUCE classes.
 
-### Business Excellence
-- **Quality Assurance**: Extensive beta testing with professional musicians and producers
-- **Cross-Platform Validation**: Testing across major DAWs (Pro Tools, Logic, Cubase, Ableton)
-- **Industry Partnerships**: Collaborations with music stores, artists, and educational institutions
-- **Open Source Contributions**: Active participation in JUCE and audio development communities
+The plugin was a great learning experience and allowed me to apply the theory I had found in resources like books and videos. 
 
-## Market Impact & Recognition
+### Hot Potato - Custom Distortion Plugin
 
-### Professional Achievements
-- **Studio Integration**: Plugins used in Grammy-winning recordings and major label releases
-- **Educational Adoption**: Used in audio engineering curricula at major universities
-- **Industry Recognition**: Featured in professional audio magazines and publications
-- **Performance Benchmarks**: Industry-leading efficiency in CPU usage and memory consumption
-
-### Future Vision
-- **Spatial Audio Processing**: Support for immersive audio formats (Dolby Atmos, 360 audio)
-- **AI-Powered Mastering**: Machine learning algorithms for automated audio optimization
-- **Cloud Processing**: Distributed audio processing for complex algorithms
-- **Hardware Acceleration**: GPU-based processing for computationally demanding effects
-
-## Why DirektDSP Demonstrates Exceptional Value
-
-**Technical Expertise**: Proven ability to develop ultra-low latency, high-performance systems with deep understanding of signal processing and cross-platform development.
-
-**Business Acumen**: Deep knowledge of professional audio industry requirements, product strategy, and quality standards meeting professional-grade expectations.
-
-**Innovation Leadership**: Capability to create novel DSP algorithms, integrate cutting-edge research, and maintain active participation in the professional audio development community.
-
----
-
-**DirektDSP represents the intersection of deep technical expertise and entrepreneurial vision.** This company demonstrates my ability to understand complex technical domains, develop professional-grade software, and build sustainable businesses around innovative technology, making me uniquely valuable for roles requiring both technical depth and business understanding.
-
-**Innovation Leadership**: Capability to create novel DSP algorithms, integrate cutting-edge research, and maintain active participation in the professional audio development community.
-
----
-
-**DirektDSP represents the intersection of deep technical expertise and entrepreneurial vision.** This company demonstrates my ability to understand complex technical domains, develop professional-grade software, and build sustainable businesses around innovative technology, making me uniquely valuable for roles requiring both technical depth and business understanding.

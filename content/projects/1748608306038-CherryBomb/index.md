@@ -1,7 +1,7 @@
 ---
 title: "CherryBomb"
 date: 2025-05-30
-draft: false
+draft: true 
 description: "Advanced social media analytics platform for content optimization and trend prediction using AI-powered insights"
 tags: ["social-media", "analytics", "ai", "machine-learning", "electron", "data-science", "scraping", "prediction"]
 ---

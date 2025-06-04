@@ -1,7 +1,7 @@
 ---
 title: "Ampere"
 date: 2025-05-30
-draft: false
+draft: true 
 description: "A supercharged Electron/Vite + Python/FastAPI application template for building high-performance cross-platform desktop applications"
 tags: ["electron", "vite", "python", "fastapi", "desktop", "template", "cross-platform", "npm", "cli"]
 ---

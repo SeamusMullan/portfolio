@@ -1,7 +1,7 @@
 ---
 title: "Pinterest Board Downloader"
 date: 2025-05-30
-draft: false
+draft: true 
 description: "Advanced web scraping tool with intelligent content detection and automated image downloading"
 tags: ["python", "web-scraping", "selenium", "automation", "image-processing", "cli", "cross-platform"]
 ---

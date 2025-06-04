@@ -1,7 +1,7 @@
 ---
 title: "candlz"
 date: 2025-05-30
-draft: false
+draft: true 
 description: "Advanced trading simulation platform with algorithmic trading capabilities and real-time market dynamics"
 tags: ["trading", "simulation", "fintech", "algorithms", "electron", "fastapi", "real-time", "financial-modeling"]
 ---
