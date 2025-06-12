@@ -19,24 +19,41 @@ jobs:
       with:
         bun-version: latest
         
+    - name: 📋 Debug - Check files
+      run: |
+        echo "Current directory:"
+        pwd
+        echo "Files in current directory:"
+        ls -la
+        echo "Files in portfolio directory:"
+        ls -la portfolio/
+        echo "Looking for package.json:"
+        find . -name "package.json" -type f
+        echo "Looking for bun.lock:"
+        find . -name "bun.lock" -type f
+        
     - name: 📦 Install dependencies
-      run: bun install --frozen-lockfile
+      run: |
+        cd portfolio
+        bun install
       
     - name: 🔍 Run type checking and build
-      run: bun run build
+      run: |
+        cd portfolio
+        bun run build
       
     - name: 📋 List build artifacts
       run: |
         echo "Build completed successfully!"
-        ls -la dist/
-        echo "Total files in dist/:"
-        find dist/ -type f | wc -l
+        ls -la portfolio/dist/
+        echo "Total files in portfolio/dist/:"
+        find portfolio/dist/ -type f | wc -l
         
     - name: 📤 Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: portfolio-dist
-        path: dist/
+        path: portfolio/dist/
         retention-days: 7
 
   deploy:
