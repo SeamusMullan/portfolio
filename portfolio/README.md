@@ -1,5 +1,43 @@
-# Vue 3 + TypeScript + Vite
+# Seamus Mullan - Portfolio Website
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A modern, responsive portfolio website built with Vue 3, TypeScript, and Vite.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+🌐 **Live Site:** [portfolio.direktdsp.com](https://portfolio.direktdsp.com)
+
+## 🚀 Features
+
+- ⚡ Built with Vue 3 + TypeScript + Vite
+- 📱 Responsive design
+- 🎨 Modern UI with smooth animations
+- 📄 Dynamic project loading
+- 🔒 Secure and fast hosting
+
+## 🛠️ Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 🚀 Deployment
+
+This project uses automated CI/CD deployment to `portfolio.direktdsp.com`:
+
+- **Automatic deployment** on every push to `main` branch
+- **Manual deployment** available from GitHub Actions
+- Built files are automatically uploaded to cPanel hosting
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed setup instructions.
+
+## 📁 Project Structure
+
+- `src/pages/` - Vue page components
+- `src/components/` - Reusable Vue components  
+- `src/data/` - JSON data files
+- `public/` - Static assets

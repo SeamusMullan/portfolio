@@ -154,7 +154,7 @@ const getTagVariant = (tag: string) => {
 
 onMounted(async () => {
   try {
-    const res = await fetch('/src/data/projects.json')
+    const res = await fetch('/projects.json')
     projects.value = await res.json()
   } catch (error) {
     console.error('Failed to load projects:', error)
