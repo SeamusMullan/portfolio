@@ -3,21 +3,24 @@
   line-height: 1.6;
   font-weight: 400;
 
-  color-scheme: light dark;
-  
-  /* Light theme colors */
-  --primary-bg: #fafafa;
+  /* Vibrant color palette */
+  --primary-bg: #fafbfc;
   --secondary-bg: #ffffff;
-  --accent-color: #646cff;
-  --accent-hover: #535bf2;
-  --text-primary: #333333;
-  --text-secondary: #666666;
-  --text-muted: #888888;
-  --border-color: #e0e0e0;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --accent-color: #6366f1;
+  --accent-hover: #5855eb;
+  --accent-secondary: #10b981;
+  --accent-tertiary: #f59e0b;
+  --accent-pink: #ec4899;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-tertiary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   
-  /* Apply light theme by default */
+  /* Apply theme */
   color: var(--text-primary);
   background-color: var(--primary-bg);
 
@@ -27,17 +30,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Dark theme */
-[data-theme="dark"] {
-  --primary-bg: #1a1a1a;
-  --secondary-bg: #2a2a2a;
-  --text-primary: rgba(255, 255, 255, 0.9);
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --text-muted: rgba(255, 255, 255, 0.5);
-  --border-color: #333333;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --gradient-hero: linear-gradient(135deg, #434343 0%, #000000 100%);
-}
+/* Remove all dark theme styles */
 
 * {
   margin: 0;
@@ -106,7 +99,7 @@ button {
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(100, 108, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
 }
 
 button:focus,
@@ -191,18 +184,5 @@ button:focus-visible {
   
   .section {
     padding: 3rem 0;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-bg: #1a1a1a;
-    --secondary-bg: #2a2a2a;
-    --text-primary: rgba(255, 255, 255, 0.9);
-    --text-secondary: rgba(255, 255, 255, 0.7);
-    --text-muted: rgba(255, 255, 255, 0.5);
-    --border-color: #333333;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    --gradient-hero: linear-gradient(135deg, #434343 0%, #000000 100%);
   }
 }

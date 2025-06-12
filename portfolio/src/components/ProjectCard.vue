@@ -88,7 +88,7 @@ defineProps<{
 
 .project-link:hover {
   color: var(--accent-color);
-  background: rgba(100, 108, 255, 0.1);
+  background: rgba(99, 102, 241, 0.1);
 }
 
 .project-description {

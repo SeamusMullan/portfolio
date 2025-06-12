@@ -19,9 +19,9 @@
             <router-link to="/projects" class="cta-button primary">
               View My Work
             </router-link>
-            <router-link to="/direktdsp" class="cta-button secondary">
+            <a href="https://direktdsp.com" target="_blank" rel="noopener" class="cta-button secondary">
               Explore DirektDSP
-            </router-link>
+            </a>
           </div>
         </div>
       </div>
@@ -239,7 +239,7 @@ onMounted(async () => {
 }
 
 .cta-section {
-  background: var(--gradient-hero);
+  background: var(--gradient-secondary);
   color: white;
   text-align: center;
   padding: 5rem 0;

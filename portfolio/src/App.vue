@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ThemeToggle from './components/ThemeToggle.vue'
+// Removed ThemeToggle component
 </script>
 
 <template>
@@ -14,9 +14,8 @@ import ThemeToggle from './components/ThemeToggle.vue'
         <div class="nav-links">
           <router-link to="/" class="nav-link">Home</router-link>
           <router-link to="/projects" class="nav-link">Projects</router-link>
-          <router-link to="/blog" class="nav-link">Blog</router-link>
-          <router-link to="/direktdsp" class="nav-link">DirektDSP</router-link>
-          <ThemeToggle />
+          <router-link to="/experience" class="nav-link">Experience</router-link>
+          <a href="https://direktdsp.com" target="_blank" rel="noopener" class="nav-link">DirektDSP</a>
         </div>
       </nav>
     </header>
@@ -42,7 +41,7 @@ import ThemeToggle from './components/ThemeToggle.vue'
             <h4>Projects</h4>
             <div class="footer-links">
               <router-link to="/projects">Portfolio</router-link>
-              <router-link to="/direktdsp">DirektDSP</router-link>
+              <a href="https://direktdsp.com" target="_blank" rel="noopener">DirektDSP</a>
             </div>
           </div>
         </div>
@@ -56,17 +55,12 @@ import ThemeToggle from './components/ThemeToggle.vue'
 
 <style scoped>
 .header {
-  background: var(--secondary-bg);
+  background: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.9);
-}
-
-[data-theme="dark"] .header {
-  background: rgba(42, 42, 42, 0.9);
 }
 
 .nav {
@@ -108,12 +102,12 @@ import ThemeToggle from './components/ThemeToggle.vue'
 
 .nav-link:hover {
   color: var(--accent-color);
-  background: rgba(100, 108, 255, 0.1);
+  background: rgba(99, 102, 241, 0.1);
 }
 
 .nav-link.router-link-active {
   color: var(--accent-color);
-  background: rgba(100, 108, 255, 0.1);
+  background: rgba(99, 102, 241, 0.1);
 }
 
 .main {
