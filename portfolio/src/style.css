@@ -133,7 +133,7 @@ button:focus-visible {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

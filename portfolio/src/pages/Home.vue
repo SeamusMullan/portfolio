@@ -8,12 +8,10 @@
             Hi, I'm <span class="gradient-text">Seamus Mullan</span>
           </h1>
           <p class="hero-subtitle">
-            Computer Science Student & Creative Developer
+            Computer Science Student & Software Developer
           </p>
           <p class="hero-description">
-            Passionate about real-time audio software, digital signal processing, 
-            and creative technologies. Building the future of audio plugins under 
-            <strong>DirektDSP</strong>.
+            I make audio software with C++ and CMake, use design tools like Photoshop and Figma, and work on low-level coding projects in C.
           </p>
           <div class="hero-actions">
             <router-link to="/projects" class="cta-button primary">
@@ -30,22 +28,28 @@
     <!-- Skills/Interests Section -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title">What I Do</h2>
+        <h2 class="section-title">My Skills and Experience</h2>
         <div class="skills-grid grid grid-3">
           <div class="skill-card card">
             <div class="skill-icon">🎵</div>
-            <h3>Audio Software</h3>
-            <p>Real-time DSP, VST/AU plugins, JUCE framework, and audio effects development</p>
+            <h3>Real-Time Audio <br> Signal Processing</h3>
+            <p>I develop real-time audio plugins using JUCE, C++ and CMake.</p>
+            <br>
+            <p>Have a look at <a href="https://direktdsp.com" target="_blank">DirektDSP</a>, my own audio software company.</p>
           </div>
           <div class="skill-card card">
             <div class="skill-icon">💻</div>
-            <h3>Systems Programming</h3>
-            <p>Low-level development, operating systems, and performance-critical applications</p>
+            <h3>Low Level Coding <br> Systems Programming</h3>
+            <p>I work with C and C++ for my low-level programming projects.</p>
+            <br>
+            <p>Check out <a href="https://github.com/seamusmullan/serotonin" target="_blank">Serotonin</a>, a custom operating system I'm making with others.</p>
           </div>
           <div class="skill-card card">
             <div class="skill-icon">🎮</div>
-            <h3>Creative Coding</h3>
-            <p>Game development, interactive experiences, and creative technology projects</p>
+            <h3>3D Modelling <br> Design Tools</h3>
+            <p>I've worked with Adobe Illustrator, Photoshop, Figma, Blender, and other design tools.</p>
+            <br>
+            <p>Look at the UI in my <a href="https://direktdsp.com" target="_blank">audio plugins</a>. That's all me!</p>
           </div>
         </div>
       </div>
@@ -134,17 +138,19 @@ onMounted(async () => {
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 1.5rem;
-  opacity: 0.9;
+  opacity: 0.95;
   font-weight: 500;
+  color: white;
 }
 
 .hero-description {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin-bottom: 2.5rem;
-  opacity: 0.8;
+  opacity: 0.9;
   line-height: 1.6;
+  color: white;
 }
 
 .hero-actions {
