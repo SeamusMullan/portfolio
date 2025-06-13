@@ -20,7 +20,6 @@ export default defineConfig({
     },
   },
   server: {
-    // SPA fallback - serve index.html for all routes
-    historyApiFallback: true,
+    // SPA fallback is handled automatically by Vite for index.html
   },
 })
