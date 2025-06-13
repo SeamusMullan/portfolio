@@ -8,16 +8,24 @@
             Hi, I'm <span class="gradient-text">Seamus Mullan</span>
           </h1>
           <p class="hero-subtitle">
-            Computer Science Student & Software Developer
+            Computer Science Student / Software Developer
           </p>
+          <p class="hero-location">Dublin, Ireland</p>
+
           <p class="hero-description">
-            I make audio software with C++ and CMake, use design tools like Photoshop and Figma, and work on low-level coding projects in C.
+            I make audio software with C++, CMake and JUCE. <br />
+            I use design tools like Photoshop, Illustrator and Figma.
           </p>
           <div class="hero-actions">
             <router-link to="/projects" class="cta-button primary">
               View My Work
             </router-link>
-            <a href="https://direktdsp.com" target="_blank" rel="noopener" class="cta-button secondary">
+            <a
+              href="https://direktdsp.com"
+              target="_blank"
+              rel="noopener"
+              class="cta-button secondary"
+            >
               Explore DirektDSP
             </a>
           </div>
@@ -32,24 +40,51 @@
         <div class="skills-grid grid grid-3">
           <div class="skill-card card">
             <div class="skill-icon">🎵</div>
-            <h3>Real-Time Audio <br> Signal Processing</h3>
+            <h3>
+              Real-Time Audio <br />
+              Signal Processing
+            </h3>
             <p>I develop real-time audio plugins using JUCE, C++ and CMake.</p>
-            <br>
-            <p>Have a look at <a href="https://direktdsp.com" target="_blank">DirektDSP</a>, my own audio software company.</p>
+            <br />
+            <p>
+              Have a look at
+              <a href="https://direktdsp.com" target="_blank">DirektDSP</a>, my
+              own audio software company.
+            </p>
           </div>
           <div class="skill-card card">
             <div class="skill-icon">💻</div>
-            <h3>Low Level Coding <br> Systems Programming</h3>
+            <h3>
+              Low Level Coding <br />
+              Systems Programming
+            </h3>
             <p>I work with C and C++ for my low-level programming projects.</p>
-            <br>
-            <p>Check out <a href="https://github.com/seamusmullan/serotonin" target="_blank">Serotonin</a>, a custom operating system I'm making with others.</p>
+            <br />
+            <p>
+              Check out
+              <a
+                href="https://github.com/seamusmullan/serotonin"
+                target="_blank"
+                >Serotonin</a
+              >, a custom operating system I'm making with others.
+            </p>
           </div>
           <div class="skill-card card">
             <div class="skill-icon">🎮</div>
-            <h3>3D Modelling <br> Design Tools</h3>
-            <p>I've worked with Adobe Illustrator, Photoshop, Figma, Blender, and other design tools.</p>
-            <br>
-            <p>Look at the UI in my <a href="https://direktdsp.com" target="_blank">audio plugins</a>. That's all me!</p>
+            <h3>
+              3D Modelling <br />
+              Design Tools
+            </h3>
+            <p>
+              I've worked with Adobe Illustrator, Photoshop, Figma, Blender, and
+              other design tools.
+            </p>
+            <br />
+            <p>
+              Look at the UI in my
+              <a href="https://direktdsp.com" target="_blank">audio plugins</a>.
+              That's all me!
+            </p>
           </div>
         </div>
       </div>
@@ -82,14 +117,21 @@
         <div class="cta-content">
           <h2>Let's Build Something Amazing</h2>
           <p>
-            Interested in collaborating or learning more about my work? 
-            I'm always excited to discuss new projects and opportunities.
+            Interested in collaborating or learning more about my work? I'm
+            always excited to discuss new projects and opportunities.
           </p>
           <div class="cta-actions">
-            <a href="mailto:seamusmullan2023@gmail.com" class="cta-button primary">
+            <a
+              href="mailto:seamusmullan2023@gmail.com"
+              class="cta-button primary"
+            >
               Get In Touch
             </a>
-            <a href="https://github.com/seamusmullan" target="_blank" class="cta-button outline">
+            <a
+              href="https://github.com/seamusmullan"
+              target="_blank"
+              class="cta-button outline"
+            >
               View GitHub
             </a>
           </div>
@@ -100,22 +142,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-import ProjectCard from '../components/ProjectCard.vue'
+import { ref, onMounted } from "vue";
+import ProjectCard from "../components/ProjectCard.vue";
 
 interface Project {
-  title: string
-  description: string
-  tags: string[]
-  featured?: boolean
+  title: string;
+  description: string;
+  tags: string[];
+  featured?: boolean;
 }
 
-const featuredProjects = ref<Project[]>([])
+const featuredProjects = ref<Project[]>([]);
 onMounted(async () => {
-  const res = await fetch('/projects.json')
-  const all = await res.json()
-  featuredProjects.value = all.filter((p: Project) => p.featured)
-})
+  const res = await fetch("/projects.json");
+  const all = await res.json();
+  featuredProjects.value = all.filter((p: Project) => p.featured);
+});
 </script>
 
 <style scoped>
@@ -143,6 +185,12 @@ onMounted(async () => {
   opacity: 0.95;
   font-weight: 500;
   color: white;
+}
+
+.hero-location {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-description {
@@ -276,16 +324,16 @@ onMounted(async () => {
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .hero-actions {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cta-button {
     width: 100%;
     max-width: 300px;

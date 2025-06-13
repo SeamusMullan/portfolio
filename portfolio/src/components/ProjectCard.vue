@@ -1,5 +1,10 @@
 <template>
   <article class="project-card card">
+    <!-- Featured banner spans full width at the top -->
+    <div v-if="featured" class="featured-banner">
+      <span>✨ Featured</span>
+    </div>
+    
     <div class="project-content">
       <div class="project-header">
         <h3 class="project-title">{{ title }}</h3>
@@ -16,9 +21,24 @@
           </a>
         </div>
       </div>
+      
       <p class="project-description">{{ description }}</p>
       <div class="project-tags">
-        <Tag v-for="tag in tags" :key="tag" :text="tag" />
+        <Tag v-for="tag in tags" :key="tag" :text="tag" :variant="getTagVariant(tag)" />
+      </div>
+      
+      <!-- Extra Demo Links -->
+      <div v-if="demoUrl_1 || demoUrl_2" class="project-extra-demos">
+        <span v-if="demoUrl_1">
+          <a :href="demoUrl_1" target="_blank" rel="noopener" class="project-link demo">
+            Demo 1
+          </a>
+        </span>
+        <span v-if="demoUrl_2">
+          <a :href="demoUrl_2" target="_blank" rel="noopener" class="project-link demo">
+            Demo 2
+          </a>
+        </span>
       </div>
     </div>
   </article>
@@ -27,18 +47,100 @@
 <script setup lang="ts">
 import Tag from './Tag.vue'
 
-defineProps<{ 
+interface ProjectCardProps {
   title: string
   description: string
   tags: string[]
   githubUrl?: string
   demoUrl?: string
-}>()
+  demoUrl_1?: string
+  demoUrl_2?: string
+  featured?: boolean
+}
+
+const props = defineProps<ProjectCardProps>()
+const { title, description, tags, githubUrl, demoUrl, demoUrl_1, demoUrl_2, featured } = props
+
+const getTagVariant = (tag: string) => {
+  // Languages (purple)
+  if (
+    [
+      "C++",
+      "C",
+      "Assembly",
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Rust",
+      "Java",
+      "Go",
+    ].some((t) => tag.includes(t))
+  ) {
+    return "languages";
+  }
+  // Audio (pink)
+  if (
+    [
+      "Audio",
+      "DSP",
+      "Music Production",
+      "FL Studio",
+      "Ableton",
+      "EDM",
+      "Creative",
+      "Real-time Audio",
+      "VST",
+      "AU",
+      "Plugins",
+    ].some((t) => tag.includes(t))
+  ) {
+    return "audio";
+  }
+  // Web (orange)
+  if (
+    [
+      "Vue.js",
+      "React",
+      "Next.js",
+      "Frontend",
+      "UI/UX",
+      "Vite",
+      "Electron",
+      "HTML",
+      "CSS",
+      "Web",
+      "Node.js",
+      "FastAPI",
+    ].some((t) => tag.includes(t))
+  ) {
+    return "web";
+  }
+  // Tools (green)
+  if (
+    [
+      "CMake",
+      "JUCE",
+      "npm",
+      "bun",
+      "Git",
+      "Docker",
+      "CLI",
+      "Desktop",
+      "Build Tools",
+      "Development Tools",
+    ].some((t) => tag.includes(t))
+  ) {
+    return "tools";
+  }
+  // Default (blue) for everything else
+  return "default";
+}
 </script>
 
 <style scoped>
 .project-card {
   height: 100%;
+  position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -51,6 +153,11 @@ defineProps<{
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 0;
+}
+
+.project-card:has(.featured-banner) .project-content {
+  padding-top: 3rem;
 }
 
 .project-header {
@@ -103,5 +210,56 @@ defineProps<{
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: auto;
+}
+
+.project-extra-demos {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.project-link.demo {
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  width: auto;
+  height: auto;
+}
+
+.project-link.demo:hover {
+  color: var(--accent-color);
+  background: rgba(99, 102, 241, 0.1);
+  border-color: var(--accent-color);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.featured-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--gradient-secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.3);
+  z-index: 2;
+  border-radius: 12px 12px 0 0;
+}
+
+.featured-banner span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 </style>

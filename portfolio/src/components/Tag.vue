@@ -5,7 +5,7 @@
 <script setup lang="ts">
 defineProps<{ 
   text: string
-  variant?: 'default' | 'tech' | 'creative' | 'tools'
+  variant?: 'default' | 'languages' | 'audio' | 'web' | 'tools'
 }>()
 </script>
 
@@ -21,28 +21,34 @@ defineProps<{
 }
 
 .tag.default,
-.tag:not(.tech):not(.creative):not(.tools) {
-  background: rgba(99, 102, 241, 0.1);
-  color: var(--accent-color);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+.tag:not(.languages):not(.audio):not(.web):not(.tools) {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
-.tag.tech {
-  background: rgba(16, 185, 129, 0.1);
-  color: var(--accent-secondary);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+.tag.languages {
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+  border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
-.tag.creative {
+.tag.audio {
   background: rgba(236, 72, 153, 0.1);
   color: var(--accent-pink);
   border: 1px solid rgba(236, 72, 153, 0.2);
 }
 
-.tag.tools {
+.tag.web {
   background: rgba(245, 158, 11, 0.1);
   color: var(--accent-tertiary);
   border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.tag.tools {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--accent-secondary);
+  border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .tag:hover {
