@@ -21,7 +21,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="w-full max-w-5xl mx-auto px-2 md:px-6 mb-12">
+    <section class="w-full max-w-full mx-auto px-4 md:px-6 mb-12">
       <h2 class="text-3xl font-bold text-center mb-10">Why Choose DirektDSP?</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card class="text-center">
@@ -55,7 +55,7 @@
     </section>
 
     <!-- DAW Compatibility Section -->
-    <section class="w-full max-w-5xl mx-auto px-2 md:px-6 mb-12">
+    <section class="w-full max-w-full mx-auto px-4 md:px-6 mb-12">
       <h2 class="text-3xl font-bold text-center mb-10">DAW Compatibility</h2>
       <Card>
         <CardContent class="flex flex-col md:flex-row gap-8 items-center py-8">
@@ -84,7 +84,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="w-full max-w-5xl mx-auto px-2 md:px-6 mb-12">
+    <section class="w-full max-w-full mx-auto px-4 md:px-6 mb-12">
       <h2 class="text-3xl font-bold text-center mb-10">What Our Users Say</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card class="text-center">

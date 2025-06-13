@@ -26,7 +26,7 @@
     </section>
 
     <!-- Skills/Interests Section -->
-    <section class="max-w-7xl mx-auto px-4 md:px-6">
+    <section class="max-w-full mx-auto px-4 md:px-6">
       <h2 class="text-4xl font-bold text-center mb-12">My Skills and Experience</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card class="text-center hover:shadow-lg transition-shadow">
@@ -63,7 +63,7 @@
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="max-w-7xl mx-auto px-4 md:px-6">
+    <section class="max-w-full mx-auto px-4 md:px-6">
       <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <ProjectCard

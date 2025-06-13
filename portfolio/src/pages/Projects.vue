@@ -18,8 +18,8 @@
     </section>
 
     <!-- Main Content -->
-    <section class="w-full max-w-7xl mx-auto px-4 md:px-6 py-12">
-      <div class="flex flex-col lg:flex-row gap-8">
+    <section class="w-full min-h-screen py-12">
+      <div class="flex flex-col lg:flex-row gap-8 w-full max-w-none mx-0 px-0">
         <!-- Sidebar -->
         <aside class="w-full lg:w-80 flex-shrink-0 space-y-6">
           <!-- Search Bar -->

@@ -1,4 +1,3 @@
-
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
@@ -7,167 +6,91 @@
       <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
       <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 leading-tight">
-          Skills & <span class="bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent">Experience</span>
+          My <span class="bg-gradient-to-r from-yellow-300 via-pink-300 to-orange-300 bg-clip-text text-transparent">Experience</span>
         </h1>
         <p class="text-xl md:text-2xl lg:text-3xl opacity-90 max-w-4xl mx-auto leading-relaxed font-light">
-          A comprehensive overview of my technical expertise and professional development
+          A timeline of my technical skills, educational background, and key achievements in software development and beyond.
         </p>
         <div class="mt-12 flex flex-wrap gap-4 justify-center">
-          <div class="h-1 w-20 bg-gradient-to-r from-emerald-300 to-cyan-300 rounded-full"></div>
+          <div class="h-1 w-20 bg-gradient-to-r from-yellow-300 to-pink-300 rounded-full"></div>
         </div>
       </div>
     </section>
 
     <!-- Main Content -->
-    <section class="w-full min-h-screen flex items-center justify-center py-12">
-      <div class="max-w-6xl mx-auto px-4 md:px-6 w-full">
-        <div class="flex flex-col gap-16">
-          <!-- Technical Skills -->
-          <div>
-            <h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle class="text-xl font-semibold mb-2">Programming Languages</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="flex flex-wrap gap-2">
-                    <Badge variant="secondary">C++</Badge>
-                    <Badge variant="outline">Python</Badge>
-                    <Badge variant="outline">TypeScript</Badge>
-                    <Badge variant="outline">JavaScript</Badge>
-                    <Badge variant="outline">C</Badge>
-                    <Badge variant="outline">Assembly</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle class="text-xl font-semibold mb-2">Audio & DSP</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="flex flex-wrap gap-2">
-                    <Badge variant="secondary">JUCE</Badge>
-                    <Badge variant="secondary">Digital Signal Processing</Badge>
-                    <Badge variant="secondary">VST/AU Plugins</Badge>
-                    <Badge variant="secondary">Real-time Audio</Badge>
-                    <Badge variant="secondary">FL Studio</Badge>
-                    <Badge variant="secondary">Ableton Live</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle class="text-xl font-semibold mb-2">Web Technologies</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="flex flex-wrap gap-2">
-                    <Badge variant="secondary">Vue.js</Badge>
-                    <Badge variant="secondary">React</Badge>
-                    <Badge variant="secondary">Node.js</Badge>
-                    <Badge variant="secondary">Vite</Badge>
-                    <Badge variant="secondary">Next.js</Badge>
-                    <Badge variant="secondary">FastAPI</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle class="text-xl font-semibold mb-2">Systems & Tools</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="flex flex-wrap gap-2">
-                    <Badge variant="secondary">Operating Systems</Badge>
-                    <Badge variant="secondary">Kernel Development</Badge>
-                    <Badge variant="secondary">CMake</Badge>
-                    <Badge variant="secondary">Git</Badge>
-                    <Badge variant="secondary">Docker</Badge>
-                    <Badge variant="secondary">OpenGL</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          <!-- Education -->
-          <div>
-            <h2 class="text-4xl font-bold text-center mb-12">Education</h2>
-            <Card class="max-w-3xl mx-auto">
-              <CardHeader class="flex flex-row items-center justify-between pb-2">
-                <div>
-                  <CardTitle class="text-xl font-semibold">Computer Science (B.Sc.)</CardTitle>
-                  <div class="text-muted-foreground text-base">Ireland</div>
-                </div>
-                <Badge variant="secondary" class="text-base">2022 - 2026</Badge>
+    <section class="w-full">
+      <div class="flex flex-col gap-16">
+        <!-- Technical Skills Section -->
+        <div class="w-full">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 pt-12">Technical Skills</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <Card v-for="skill in skills" :key="skill.name" class="hover:shadow-lg transition-shadow duration-300 ease-in-out">
+              <CardHeader class="flex flex-row items-center gap-4 pb-2">
+                <component :is="skill.icon" class="w-8 h-8 text-emerald-500" />
+                <CardTitle class="text-xl font-semibold">{{ skill.name }}</CardTitle>
               </CardHeader>
               <CardContent>
-                <div class="text-muted-foreground mb-2">
-                  Currently in third year, focusing on systems programming, digital signal processing, and software engineering. Active in audio software development and creative technology projects.
-                </div>
+                <p class="text-sm text-muted-foreground">{{ skill.description }}</p>
               </CardContent>
             </Card>
           </div>
+        </div>
 
-          <!-- Key Achievements -->
-          <div>
-            <h2 class="text-4xl font-bold text-center mb-12">Key Achievements</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card class="text-center">
-                <CardHeader>
-                  <div class="text-5xl mb-4">🎵</div>
-                  <CardTitle class="text-xl font-semibold mb-1">DirektDSP</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="text-muted-foreground mb-2">Founded audio software company developing professional VST/AU plugins with focus on real-time DSP</div>
-                </CardContent>
-              </Card>
-              <Card class="text-center">
-                <CardHeader>
-                  <div class="text-5xl mb-4">🖥️</div>
-                  <CardTitle class="text-xl font-semibold mb-1">Operating System</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="text-muted-foreground mb-2">Built custom OS from scratch with kernel, memory management, and system calls in C and Assembly</div>
-                </CardContent>
-              </Card>
-              <Card class="text-center">
-                <CardHeader>
-                  <div class="text-5xl mb-4">⚡</div>
-                  <CardTitle class="text-xl font-semibold mb-1">Performance Focus</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="text-muted-foreground mb-2">Specialized in real-time systems, low-latency audio processing, and performance-critical applications</div>
-                </CardContent>
-              </Card>
-              <Card class="text-center">
-                <CardHeader>
-                  <div class="text-5xl mb-4">🎮</div>
-                  <CardTitle class="text-xl font-semibold mb-1">Creative Tech</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div class="text-muted-foreground mb-2">Experience in game development, music production, and interactive media combining technical and creative skills</div>
-                </CardContent>
-              </Card>
+        <!-- Education Section -->
+        <div class="w-full max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Education</h2>
+          <Card class="overflow-hidden shadow-lg">
+            <div class="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 p-6">
+              <div class="flex items-center gap-4">
+                <div class="p-3 bg-white dark:bg-gray-950 rounded-lg shadow">
+                  <component :is="icons.GraduationCap" class="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
+                </div>
+                <div>
+                  <CardTitle class="text-2xl font-bold text-gray-900 dark:text-white">BSc (Hons) Computer Science</CardTitle>
+                  <p class="text-lg text-gray-700 dark:text-gray-300">Trinity College Dublin</p>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <!-- Call to Action -->
-          <Card class="bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-700 text-white py-12 px-8 text-center shadow-xl">
-            <CardHeader>
-              <CardTitle class="text-4xl md:text-5xl font-bold mb-4">Let's Collaborate</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div class="mb-8 text-xl opacity-90 max-w-2xl mx-auto">Interested in working together? I'm always open to discussing new opportunities, whether it's audio software development, systems programming, or creative technology projects.</div>
-              <div class="flex flex-wrap gap-4 justify-center">
-                <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-3">
-                  <a href="mailto:seamusmullan2023@gmail.com">Get In Touch</a>
-                </Button>
-                <Button asChild variant="outline" size="lg" class="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-emerald-700">
-                  <a href="https://github.com/seamusmullan" target="_blank" rel="noopener">View GitHub</a>
-                </Button>
+            <CardContent class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-sm text-muted-foreground">
+                <span>Expected Graduation: May 2026</span>
+                <span>Dublin, Ireland</span>
+              </div>
+              <p class="text-base">
+                Currently pursuing a degree in Computer Science & Software Engineering.
+              </p>
+              <div class="text-sm">
+                <span class="font-semibold">Completed Modules:</span> Software Testing, DSA, Web Development, Computer Architecture, Operating Systems, Databases  
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        <!-- Key Achievements Section -->
+        <div class="w-full pb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Key Achievements</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card v-for="achievement in achievements" :key="achievement.title" class="hover:shadow-xl transition-shadow duration-300 ease-in-out">
+              <CardHeader class="flex items-start gap-4 pb-3">
+                <div class="p-2 bg-emerald-100 dark:bg-emerald-900/50 rounded-md mt-1">
+                  <component :is="achievement.icon" class="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                </div>
+                <div>
+                  <CardTitle class="text-xl font-semibold mb-1">{{ achievement.title }}</CardTitle>
+                  <p class="text-sm text-muted-foreground">{{ achievement.date }}</p>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p class="text-base">{{ achievement.description }}</p>
+                <Button v-if="achievement.link" asChild variant="link" class="px-0 h-auto mt-2 text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300">
+                  <a :href="achievement.link" target="_blank" rel="noopener noreferrer">
+                    {{ achievement.linkText || 'Learn More' }}
+                    <ArrowUpRight class="w-4 h-4 ml-1" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
@@ -175,11 +98,77 @@
 </template>
 
 <script setup lang="ts">
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight } from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
+import { ref } from 'vue';
+
+const icons = {
+  GraduationCap,
+  Briefcase,
+  Award,
+  Code,
+  Cpu,
+  Users,
+  Palette,
+  ArrowUpRight
+};
+
+interface Skill {
+  name: string;
+  description: string;
+  icon: any; // Using 'any' for simplicity with dynamic components
+}
+
+interface Achievement {
+  title: string;
+  date: string;
+  description: string;
+  icon: any;
+  link?: string;
+  linkText?: string;
+}
+
+const skills = ref<Skill[]>([
+  { name: 'C / C++', description: 'Low-level systems programming, real-time audio (JUCE), performance optimization.', icon: icons.Cpu },
+  { name: 'JavaScript / TypeScript', description: 'Full-stack web development, Vue.js, Node.js, modern frontend frameworks.', icon: icons.Code },
+  { name: 'Python', description: 'Scripting, automation, data analysis, and backend development with FastAPI.', icon: icons.Code },
+  { name: 'Version Control (Git)', description: 'Proficient with Git workflows, branching, merging, and collaboration on GitHub/GitLab.', icon: icons.Briefcase },
+  { name: 'UI/UX Design', description: 'Figma, Adobe XD, Photoshop. Creating intuitive and visually appealing user interfaces.', icon: icons.Palette },
+  { name: 'Agile Methodologies', description: 'Experience with Scrum and Kanban, iterative development, and collaborative teamwork.', icon: icons.Users },
+  { name: 'Problem Solving', description: 'Analytical thinking and creative solutions for complex technical challenges.', icon: icons.Award },
+  { name: 'CMake & Build Systems', description: 'Managing complex C++ projects and dependencies using CMake.', icon: icons.Cpu },
+]);
+
+const achievements = ref<Achievement[]>([
+  {
+    title: 'Founded DirektDSP',
+    date: '2023 - Present',
+    description: 'Established an audio software company, developing and marketing VST/AU plugins for music producers. Responsible for all aspects from coding to UI design and web development.',
+    icon: icons.Briefcase,
+    link: 'https://direktdsp.com',
+    linkText: 'Visit DirektDSP'
+  },
+  {
+    title: 'Serotonin Operating System',
+    date: '2023 - Present',
+    description: 'Core contributor to a custom x86-64 operating system built from scratch in C and Assembly. Focusing on kernel development, memory management, and system calls.',
+    icon: icons.Cpu,
+    link: 'https://github.com/seamusmullan/serotonin',
+    linkText: 'View on GitHub'
+  },
+  {
+    title: 'Portfolio Website (This one!)',
+    date: '2024',
+    description: 'Designed and developed this portfolio using Vue.js, TypeScript, and Tailwind CSS, showcasing my projects and skills. Deployed with Vercel.',
+    icon: icons.Palette,
+    link: 'https://github.com/seamusmullan/portfolio',
+    linkText: 'View Source Code'
+  },
+]);
+
 </script>
 
-
-<style>
+<style scoped>
+/* Scoped styles if needed */
 </style>
