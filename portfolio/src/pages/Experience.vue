@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-800 dark:from-emerald-900 dark:via-teal-900 dark:to-cyan-950 text-white overflow-hidden">
+    <section class="relative bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-800 dark:from-emerald-900 dark:via-teal-900 dark:to-cyan-950 text-white overflow-hidden rounded-lg">
       <div class="absolute inset-0 bg-black/10 dark:bg-black/30"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
       <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
@@ -86,7 +86,7 @@
               <CardContent>
                 <p class="text-base">{{ achievement.description }}</p>
                 <Button v-if="achievement.link" asChild variant="link" class="px-0 h-auto mt-2 text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300">
-                  <a :href="achievement.link" target="_blank" rel="noopener noreferrer">
+                  <a :href="achievement.link" target="_blank" rel="noopener noreferrer" class="text-black dark:text-white">
                     {{ achievement.linkText || 'Learn More' }}
                     <ArrowUpRight class="w-4 h-4 ml-1" />
                   </a>

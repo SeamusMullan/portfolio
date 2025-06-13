@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen space-y-16">
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-purple-800 dark:from-blue-900 dark:via-purple-900 dark:to-purple-950 text-white overflow-hidden">
+    <section class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-purple-800 dark:from-blue-900 dark:via-purple-900 dark:to-purple-950 text-white overflow-hidden rounded-lg">
       <div class="absolute inset-0 bg-black/10 dark:bg-black/30"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
       <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
@@ -16,10 +16,10 @@
         </div>
         <div class="flex flex-wrap gap-6 justify-center">
           <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-4 shadow-xl">
-            <router-link to="/projects">View My Work</router-link>
+            <router-link to="/projects" class="text-black dark:text-white">View My Work</router-link>
           </Button>
           <Button asChild variant="outline" size="lg" class="text-lg px-8 py-4 border-white/30 hover:bg-white/10 shadow-xl">
-            <a href="https://direktdsp.com" target="_blank" rel="noopener">Explore DirektDSP</a>
+            <a href="https://direktdsp.com" target="_blank" rel="noopener" class="text-black dark:text-white">Explore DirektDSP</a>
           </Button>
         </div>
       </div>
@@ -77,7 +77,7 @@
       </div>
       <div class="flex justify-center">
         <Button asChild variant="outline" size="lg" class="text-lg px-8 py-3">
-          <router-link to="/projects">View All Projects</router-link>
+          <router-link to="/projects" class="text-black dark:text-white">View All Projects</router-link>
         </Button>
       </div>
     </section>
@@ -94,7 +94,7 @@
             <a href="mailto:seamusmullan2023@gmail.com">Get In Touch</a>
           </Button>
           <Button asChild variant="outline" size="lg" class="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-emerald-700">
-            <a href="https://github.com/seamusmullan" target="_blank" rel="noopener">View GitHub</a>
+            <a href="https://github.com/seamusmullan" target="_blank" rel="noopener" class="!text-black dark:!text-white">View GitHub</a>
           </Button>
         </div>
       </CardContent>

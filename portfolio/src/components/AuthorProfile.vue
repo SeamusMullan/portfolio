@@ -3,8 +3,8 @@
     <h2>{{ author.name }}</h2>
     <p>{{ author.bio }}</p>
     <div class="links">
-      <a :href="author.social.github" target="_blank">GitHub</a> |
-      <a :href="author.social.linkedin" target="_blank">LinkedIn</a>
+      <a :href="author.social.github" target="_blank" class="text-black dark:text-white">GitHub</a> |
+      <a :href="author.social.linkedin" target="_blank" class="text-black dark:text-white">LinkedIn</a>
     </div>
   </div>
 </template>

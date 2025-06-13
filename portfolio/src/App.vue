@@ -41,7 +41,7 @@ const route = useRoute()
                 </SidebarMenuItem>
                 <SidebarMenuItem>
                   <SidebarMenuButton asChild>
-                    <a href="https://direktdsp.com" target="_blank" rel="noopener">DirektDSP</a>
+                    <a href="https://direktdsp.com" target="_blank" rel="noopener" class="text-black dark:text-white">DirektDSP</a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>
@@ -65,10 +65,10 @@ const route = useRoute()
             <div class="flex items-center gap-2">
               <ThemeToggle />
               <Button asChild variant="ghost" size="sm">
-                <a href="https://github.com/seamusmullan" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://github.com/seamusmullan" target="_blank" rel="noopener" class="text-black dark:text-white">GitHub</a>
               </Button>
               <Button asChild variant="ghost" size="sm">
-                <a href="https://linkedin.com/in/seamusmullan" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://linkedin.com/in/seamusmullan" target="_blank" rel="noopener" class="text-black dark:text-white">LinkedIn</a>
               </Button>
             </div>
           </div>

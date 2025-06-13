@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-purple-800 dark:from-blue-900 dark:via-purple-900 dark:to-purple-950 text-white overflow-hidden">
+    <section class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-purple-800 dark:from-blue-900 dark:via-purple-900 dark:to-purple-950 text-white overflow-hidden rounded-lg">
       <div class="absolute inset-0 bg-black/10 dark:bg-black/30"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
       <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
@@ -111,6 +111,8 @@
               :demoUrl="project.demoUrl"
               :demoUrl_1="project.demoUrl_1"
               :demoUrl_2="project.demoUrl_2"
+              :demoUrl_1_title="project.demoUrl_1_title"
+              :demoUrl_2_title="project.demoUrl_2_title"
               :featured="project.featured"
             />
           </div>
@@ -147,6 +149,8 @@ interface Project {
   demoUrl?: string;
   demoUrl_1?: string;
   demoUrl_2?: string;
+  demoUrl_1_title?: string;
+  demoUrl_2_title?: string;
 }
 
 const projects = ref<Project[]>([]);
