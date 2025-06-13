@@ -1,149 +1,112 @@
 <template>
-  <div>
+  <div class="min-h-screen space-y-16">
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            Hi, I'm <span class="gradient-text">Seamus Mullan</span>
-          </h1>
-          <p class="hero-subtitle">
-            Computer Science Student / Software Developer
-          </p>
-          <p class="hero-location">Dublin, Ireland</p>
-
-          <p class="hero-description">
-            I make audio software with C++, CMake and JUCE. <br />
-            I use design tools like Photoshop, Illustrator and Figma.
-          </p>
-          <div class="hero-actions">
-            <router-link to="/projects" class="cta-button primary">
-              View My Work
-            </router-link>
-            <a
-              href="https://direktdsp.com"
-              target="_blank"
-              rel="noopener"
-              class="cta-button secondary"
-            >
-              Explore DirektDSP
-            </a>
-          </div>
+    <section class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-purple-800 dark:from-blue-900 dark:via-purple-900 dark:to-purple-950 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-black/10 dark:bg-black/30"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
+      <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 leading-tight">
+          Hi, I'm <span class="bg-gradient-to-r from-yellow-300 via-pink-300 to-orange-300 bg-clip-text text-transparent">Seamus Mullan</span>
+        </h1>
+        <div class="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 opacity-90">Computer Science Student / Software Developer</div>
+        <div class="text-lg md:text-xl lg:text-2xl mb-4 opacity-80">Dublin, Ireland</div>
+        <div class="text-xl md:text-2xl lg:text-3xl mb-12 opacity-90 max-w-5xl mx-auto leading-relaxed font-light">
+          I make audio software with C++, CMake and JUCE.<br />
+          I use design tools like Photoshop, Illustrator and Figma.
+        </div>
+        <div class="flex flex-wrap gap-6 justify-center">
+          <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-4 shadow-xl">
+            <router-link to="/projects">View My Work</router-link>
+          </Button>
+          <Button asChild variant="outline" size="lg" class="text-lg px-8 py-4 border-white/30 hover:bg-white/10 shadow-xl">
+            <a href="https://direktdsp.com" target="_blank" rel="noopener">Explore DirektDSP</a>
+          </Button>
         </div>
       </div>
     </section>
 
     <!-- Skills/Interests Section -->
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">My Skills and Experience</h2>
-        <div class="skills-grid grid grid-3">
-          <div class="skill-card card">
-            <div class="skill-icon">🎵</div>
-            <h3>
-              Real-Time Audio <br />
-              Signal Processing
-            </h3>
-            <p>I develop real-time audio plugins using JUCE, C++ and CMake.</p>
-            <br />
-            <p>
-              Have a look at
-              <a href="https://direktdsp.com" target="_blank">DirektDSP</a>, my
-              own audio software company.
-            </p>
-          </div>
-          <div class="skill-card card">
-            <div class="skill-icon">💻</div>
-            <h3>
-              Low Level Coding <br />
-              Systems Programming
-            </h3>
-            <p>I work with C and C++ for my low-level programming projects.</p>
-            <br />
-            <p>
-              Check out
-              <a
-                href="https://github.com/seamusmullan/serotonin"
-                target="_blank"
-                >Serotonin</a
-              >, a custom operating system I'm making with others.
-            </p>
-          </div>
-          <div class="skill-card card">
-            <div class="skill-icon">🎮</div>
-            <h3>
-              3D Modelling <br />
-              Design Tools
-            </h3>
-            <p>
-              I've worked with Adobe Illustrator, Photoshop, Figma, Blender, and
-              other design tools.
-            </p>
-            <br />
-            <p>
-              Look at the UI in my
-              <a href="https://direktdsp.com" target="_blank">audio plugins</a>.
-              That's all me!
-            </p>
-          </div>
-        </div>
+    <section class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">My Skills and Experience</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Card class="text-center hover:shadow-lg transition-shadow">
+          <CardHeader class="pb-4">
+            <div class="text-5xl mb-4">🎵</div>
+            <CardTitle class="text-xl font-semibold mb-2">Real-Time Audio<br />Signal Processing</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="mb-3 text-muted-foreground">I develop real-time audio plugins using JUCE, C++ and CMake.</div>
+            <div class="text-sm text-muted-foreground">Have a look at <a href="https://direktdsp.com" target="_blank" class="underline hover:no-underline">DirektDSP</a>, my own audio software company.</div>
+          </CardContent>
+        </Card>
+        <Card class="text-center hover:shadow-lg transition-shadow">
+          <CardHeader class="pb-4">
+            <div class="text-5xl mb-4">💻</div>
+            <CardTitle class="text-xl font-semibold mb-2">Low Level Coding<br />Systems Programming</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="mb-3 text-muted-foreground">I work with C and C++ for my low-level programming projects.</div>
+            <div class="text-sm text-muted-foreground">Check out <a href="https://github.com/seamusmullan/serotonin" target="_blank" class="underline hover:no-underline">Serotonin</a>, a custom operating system I'm making with others.</div>
+          </CardContent>
+        </Card>
+        <Card class="text-center hover:shadow-lg transition-shadow">
+          <CardHeader class="pb-4">
+            <div class="text-5xl mb-4">🎮</div>
+            <CardTitle class="text-xl font-semibold mb-2">3D Modelling<br />Design Tools</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div class="mb-3 text-muted-foreground">I've worked with Adobe Illustrator, Photoshop, Figma, Blender, and other design tools.</div>
+            <div class="text-sm text-muted-foreground">Look at the UI in my <a href="https://direktdsp.com" target="_blank" class="underline hover:no-underline">audio plugins</a>. That's all me!</div>
+          </CardContent>
+        </Card>
       </div>
     </section>
 
     <!-- Featured Projects Section -->
-    <section class="section featured-projects">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid grid grid-2">
-          <ProjectCard
-            v-for="project in featuredProjects"
-            :key="project.title"
-            :title="project.title"
-            :description="project.description"
-            :tags="project.tags"
-          />
-        </div>
-        <div class="section-action">
-          <router-link to="/projects" class="cta-button outline">
-            View All Projects
-          </router-link>
-        </div>
+    <section class="max-w-7xl mx-auto px-4 md:px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <ProjectCard
+          v-for="project in featuredProjects"
+          :key="project.title"
+          :title="project.title"
+          :description="project.description"
+          :tags="project.tags"
+          :featured="project.featured"
+        />
+      </div>
+      <div class="flex justify-center">
+        <Button asChild variant="outline" size="lg" class="text-lg px-8 py-3">
+          <router-link to="/projects">View All Projects</router-link>
+        </Button>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Let's Build Something Amazing</h2>
-          <p>
-            Interested in collaborating or learning more about my work? I'm
-            always excited to discuss new projects and opportunities.
-          </p>
-          <div class="cta-actions">
-            <a
-              href="mailto:seamusmullan2023@gmail.com"
-              class="cta-button primary"
-            >
-              Get In Touch
-            </a>
-            <a
-              href="https://github.com/seamusmullan"
-              target="_blank"
-              class="cta-button outline"
-            >
-              View GitHub
-            </a>
-          </div>
+    <Card class="bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-700 text-white py-12 px-8 text-center shadow-xl">
+      <CardHeader>
+        <CardTitle class="text-4xl md:text-5xl font-bold mb-4">Let's Collaborate</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div class="mb-8 text-xl opacity-90 max-w-2xl mx-auto">Interested in working together? I'm always open to discussing new opportunities, whether it's audio software development, systems programming, or creative technology projects.</div>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-3">
+            <a href="mailto:seamusmullan2023@gmail.com">Get In Touch</a>
+          </Button>
+          <Button asChild variant="outline" size="lg" class="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-emerald-700">
+            <a href="https://github.com/seamusmullan" target="_blank" rel="noopener">View GitHub</a>
+          </Button>
         </div>
-      </div>
-    </section>
+      </CardContent>
+    </Card>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import ProjectCard from "../components/ProjectCard.vue";
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 
 interface Project {
   title: string;
@@ -160,183 +123,6 @@ onMounted(async () => {
 });
 </script>
 
-<style scoped>
-.hero-section {
-  background: var(--gradient-hero);
-  color: white;
-  padding: 8rem 0;
-  text-align: center;
-}
-
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  font-weight: 800;
-}
-
-.hero-subtitle {
-  font-size: 1.7rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.95;
-  font-weight: 500;
-  color: white;
-}
-
-.hero-location {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.hero-description {
-  font-size: 1.25rem;
-  margin-bottom: 2.5rem;
-  opacity: 0.9;
-  line-height: 1.6;
-  color: white;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.cta-button.primary {
-  background: white;
-  color: var(--accent-color);
-}
-
-.cta-button.primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
-}
-
-.cta-button.secondary {
-  background: transparent;
-  color: white;
-  border-color: white;
-}
-
-.cta-button.secondary:hover {
-  background: white;
-  color: var(--accent-color);
-}
-
-.cta-button.outline {
-  background: transparent;
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-.cta-button.outline:hover {
-  background: var(--accent-color);
-  color: white;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.skills-grid {
-  margin-bottom: 2rem;
-}
-
-.skill-card {
-  text-align: center;
-  padding: 2.5rem 2rem;
-}
-
-.skill-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.skill-card h3 {
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-}
-
-.skill-card p {
-  color: var(--text-secondary);
-}
-
-.featured-projects {
-  background: var(--secondary-bg);
-}
-
-.projects-grid {
-  margin-bottom: 3rem;
-}
-
-.section-action {
-  text-align: center;
-}
-
-.cta-section {
-  background: var(--gradient-secondary);
-  color: white;
-  text-align: center;
-  padding: 5rem 0;
-}
-
-.cta-content h2 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
-
-.cta-content p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-button {
-    width: 100%;
-    max-width: 300px;
-  }
-}
+<style>
 </style>
+

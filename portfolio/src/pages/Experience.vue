@@ -1,128 +1,173 @@
+
 <template>
-  <div class="experience-page">
-    <!-- Skills Section -->
-    <section class="section">
-      <div class="container">
-        <h1 class="page-title">Skills & Experience</h1>
-        <p class="page-subtitle">
+  <div class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-800 dark:from-emerald-900 dark:via-teal-900 dark:to-cyan-950 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-black/10 dark:bg-black/30"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
+      <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 leading-tight">
+          Skills & <span class="bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent">Experience</span>
+        </h1>
+        <p class="text-xl md:text-2xl lg:text-3xl opacity-90 max-w-4xl mx-auto leading-relaxed font-light">
           A comprehensive overview of my technical expertise and professional development
         </p>
-
-        <!-- Technical Skills -->
-        <div class="skills-section">
-          <h2 class="section-title">Technical Skills</h2>
-          <div class="skills-grid">
-            <div class="skill-category">
-              <h3 class="category-title">Programming Languages</h3>
-              <div class="skill-tags">
-                <span class="skill-tag cpp">C++</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">C</span>
-                <span class="skill-tag">Assembly</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3 class="category-title">Audio & DSP</h3>
-              <div class="skill-tags">
-                <span class="skill-tag audio">JUCE</span>
-                <span class="skill-tag audio">Digital Signal Processing</span>
-                <span class="skill-tag audio">VST/AU Plugins</span>
-                <span class="skill-tag audio">Real-time Audio</span>
-                <span class="skill-tag audio">FL Studio</span>
-                <span class="skill-tag audio">Ableton Live</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3 class="category-title">Web Technologies</h3>
-              <div class="skill-tags">
-                <span class="skill-tag web">Vue.js</span>
-                <span class="skill-tag web">React</span>
-                <span class="skill-tag web">Node.js</span>
-                <span class="skill-tag web">Vite</span>
-                <span class="skill-tag web">Next.js</span>
-                <span class="skill-tag web">FastAPI</span>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3 class="category-title">Systems & Tools</h3>
-              <div class="skill-tags">
-                <span class="skill-tag systems">Operating Systems</span>
-                <span class="skill-tag systems">Kernel Development</span>
-                <span class="skill-tag systems">CMake</span>
-                <span class="skill-tag systems">Git</span>
-                <span class="skill-tag systems">Docker</span>
-                <span class="skill-tag systems">OpenGL</span>
-              </div>
-            </div>
-          </div>
+        <div class="mt-12 flex flex-wrap gap-4 justify-center">
+          <div class="h-1 w-20 bg-gradient-to-r from-emerald-300 to-cyan-300 rounded-full"></div>
         </div>
+      </div>
+    </section>
 
-        <!-- Education -->
-        <div class="education-section">
-          <h2 class="section-title">Education</h2>
-          <div class="education-card">
-            <div class="education-header">
-              <h3>Computer Science (B.Sc.)</h3>
-              <span class="education-year">2022 - 2026</span>
+    <!-- Main Content -->
+    <section class="w-full min-h-screen flex items-center justify-center py-12">
+      <div class="max-w-6xl mx-auto px-4 md:px-6 w-full">
+        <div class="flex flex-col gap-16">
+          <!-- Technical Skills -->
+          <div>
+            <h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-xl font-semibold mb-2">Programming Languages</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="flex flex-wrap gap-2">
+                    <Badge variant="secondary">C++</Badge>
+                    <Badge variant="outline">Python</Badge>
+                    <Badge variant="outline">TypeScript</Badge>
+                    <Badge variant="outline">JavaScript</Badge>
+                    <Badge variant="outline">C</Badge>
+                    <Badge variant="outline">Assembly</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-xl font-semibold mb-2">Audio & DSP</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="flex flex-wrap gap-2">
+                    <Badge variant="secondary">JUCE</Badge>
+                    <Badge variant="secondary">Digital Signal Processing</Badge>
+                    <Badge variant="secondary">VST/AU Plugins</Badge>
+                    <Badge variant="secondary">Real-time Audio</Badge>
+                    <Badge variant="secondary">FL Studio</Badge>
+                    <Badge variant="secondary">Ableton Live</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-xl font-semibold mb-2">Web Technologies</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="flex flex-wrap gap-2">
+                    <Badge variant="secondary">Vue.js</Badge>
+                    <Badge variant="secondary">React</Badge>
+                    <Badge variant="secondary">Node.js</Badge>
+                    <Badge variant="secondary">Vite</Badge>
+                    <Badge variant="secondary">Next.js</Badge>
+                    <Badge variant="secondary">FastAPI</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle class="text-xl font-semibold mb-2">Systems & Tools</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="flex flex-wrap gap-2">
+                    <Badge variant="secondary">Operating Systems</Badge>
+                    <Badge variant="secondary">Kernel Development</Badge>
+                    <Badge variant="secondary">CMake</Badge>
+                    <Badge variant="secondary">Git</Badge>
+                    <Badge variant="secondary">Docker</Badge>
+                    <Badge variant="secondary">OpenGL</Badge>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
-            <p class="education-institution">Ireland</p>
-            <p class="education-description">
-              Currently in third year, focusing on systems programming, digital signal processing, 
-              and software engineering. Active in audio software development and creative technology projects.
-            </p>
           </div>
-        </div>
 
-        <!-- Key Projects Overview -->
-        <div class="achievements-section">
-          <h2 class="section-title">Key Achievements</h2>
-          <div class="achievements-grid">
-            <div class="achievement-card">
-              <div class="achievement-icon">🎵</div>
-              <h3>DirektDSP</h3>
-              <p>Founded audio software company developing professional VST/AU plugins with focus on real-time DSP</p>
-            </div>
-            
-            <div class="achievement-card">
-              <div class="achievement-icon">🖥️</div>
-              <h3>Operating System</h3>
-              <p>Built custom OS from scratch with kernel, memory management, and system calls in C and Assembly</p>
-            </div>
-            
-            <div class="achievement-card">
-              <div class="achievement-icon">⚡</div>
-              <h3>Performance Focus</h3>
-              <p>Specialized in real-time systems, low-latency audio processing, and performance-critical applications</p>
-            </div>
-            
-            <div class="achievement-card">
-              <div class="achievement-icon">🎮</div>
-              <h3>Creative Tech</h3>
-              <p>Experience in game development, music production, and interactive media combining technical and creative skills</p>
-            </div>
+          <!-- Education -->
+          <div>
+            <h2 class="text-4xl font-bold text-center mb-12">Education</h2>
+            <Card class="max-w-3xl mx-auto">
+              <CardHeader class="flex flex-row items-center justify-between pb-2">
+                <div>
+                  <CardTitle class="text-xl font-semibold">Computer Science (B.Sc.)</CardTitle>
+                  <div class="text-muted-foreground text-base">Ireland</div>
+                </div>
+                <Badge variant="secondary" class="text-base">2022 - 2026</Badge>
+              </CardHeader>
+              <CardContent>
+                <div class="text-muted-foreground mb-2">
+                  Currently in third year, focusing on systems programming, digital signal processing, and software engineering. Active in audio software development and creative technology projects.
+                </div>
+              </CardContent>
+            </Card>
           </div>
-        </div>
 
-        <!-- Call to Action -->
-        <div class="cta-section">
-          <h2>Let's Collaborate</h2>
-          <p>
-            Interested in working together? I'm always open to discussing new opportunities, 
-            whether it's audio software development, systems programming, or creative technology projects.
-          </p>
-          <div class="cta-actions">
-            <a href="mailto:seamusmullan2023@gmail.com" class="cta-button primary">
-              Get In Touch
-            </a>
-            <a href="https://github.com/seamusmullan" target="_blank" rel="noopener" class="cta-button outline">
-              View GitHub
-            </a>
+          <!-- Key Achievements -->
+          <div>
+            <h2 class="text-4xl font-bold text-center mb-12">Key Achievements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card class="text-center">
+                <CardHeader>
+                  <div class="text-5xl mb-4">🎵</div>
+                  <CardTitle class="text-xl font-semibold mb-1">DirektDSP</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="text-muted-foreground mb-2">Founded audio software company developing professional VST/AU plugins with focus on real-time DSP</div>
+                </CardContent>
+              </Card>
+              <Card class="text-center">
+                <CardHeader>
+                  <div class="text-5xl mb-4">🖥️</div>
+                  <CardTitle class="text-xl font-semibold mb-1">Operating System</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="text-muted-foreground mb-2">Built custom OS from scratch with kernel, memory management, and system calls in C and Assembly</div>
+                </CardContent>
+              </Card>
+              <Card class="text-center">
+                <CardHeader>
+                  <div class="text-5xl mb-4">⚡</div>
+                  <CardTitle class="text-xl font-semibold mb-1">Performance Focus</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="text-muted-foreground mb-2">Specialized in real-time systems, low-latency audio processing, and performance-critical applications</div>
+                </CardContent>
+              </Card>
+              <Card class="text-center">
+                <CardHeader>
+                  <div class="text-5xl mb-4">🎮</div>
+                  <CardTitle class="text-xl font-semibold mb-1">Creative Tech</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div class="text-muted-foreground mb-2">Experience in game development, music production, and interactive media combining technical and creative skills</div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
+
+          <!-- Call to Action -->
+          <Card class="bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-700 text-white py-12 px-8 text-center shadow-xl">
+            <CardHeader>
+              <CardTitle class="text-4xl md:text-5xl font-bold mb-4">Let's Collaborate</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div class="mb-8 text-xl opacity-90 max-w-2xl mx-auto">Interested in working together? I'm always open to discussing new opportunities, whether it's audio software development, systems programming, or creative technology projects.</div>
+              <div class="flex flex-wrap gap-4 justify-center">
+                <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-3">
+                  <a href="mailto:seamusmullan2023@gmail.com">Get In Touch</a>
+                </Button>
+                <Button asChild variant="outline" size="lg" class="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-emerald-700">
+                  <a href="https://github.com/seamusmullan" target="_blank" rel="noopener">View GitHub</a>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
@@ -130,289 +175,11 @@
 </template>
 
 <script setup lang="ts">
-// Experience page showcasing skills, education, and achievements
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 </script>
 
-<style scoped>
-.experience-page {
-  min-height: 100vh;
-}
 
-.page-title {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 3rem;
-  font-weight: 800;
-  background: var(--gradient-hero);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.page-subtitle {
-  text-align: center;
-  margin-bottom: 4rem;
-  font-size: 1.2rem;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.skills-section,
-.education-section,
-.achievements-section {
-  margin-bottom: 5rem;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
-  color: var(--text-primary);
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-}
-
-.skill-category {
-  background: var(--secondary-bg);
-  border-radius: 16px;
-  padding: 2.5rem;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
-}
-
-.category-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: var(--text-primary);
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.skill-tag {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  background: rgba(99, 102, 241, 0.1);
-  color: var(--accent-color);
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  transition: all 0.3s ease;
-}
-
-.skill-tag:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
-}
-
-.skill-tag.cpp {
-  background: rgba(16, 185, 129, 0.1);
-  color: var(--accent-secondary);
-  border-color: rgba(16, 185, 129, 0.2);
-}
-
-.skill-tag.audio {
-  background: rgba(236, 72, 153, 0.1);
-  color: var(--accent-pink);
-  border-color: rgba(236, 72, 153, 0.2);
-}
-
-.skill-tag.web {
-  background: rgba(245, 158, 11, 0.1);
-  color: var(--accent-tertiary);
-  border-color: rgba(245, 158, 11, 0.2);
-}
-
-.skill-tag.systems {
-  background: rgba(139, 92, 246, 0.1);
-  color: #8b5cf6;
-  border-color: rgba(139, 92, 246, 0.2);
-}
-
-.education-card {
-  background: var(--secondary-bg);
-  border-radius: 16px;
-  padding: 3rem;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.education-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.education-header h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.education-year {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--accent-color);
-  background: rgba(99, 102, 241, 0.1);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-}
-
-.education-institution {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
-}
-
-.education-description {
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.achievements-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.achievement-card {
-  background: var(--secondary-bg);
-  border-radius: 16px;
-  padding: 2.5rem;
-  text-align: center;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.achievement-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-.achievement-icon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.achievement-card h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-}
-
-.achievement-card p {
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.cta-section {
-  background: var(--gradient-secondary);
-  color: white;
-  text-align: center;
-  padding: 4rem 3rem;
-  border-radius: 20px;
-  margin-top: 4rem;
-}
-
-.cta-section h2 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.cta-section p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-actions {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.cta-button.primary {
-  background: white;
-  color: var(--accent-color);
-}
-
-.cta-button.primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
-}
-
-.cta-button.outline {
-  background: transparent;
-  color: white;
-  border-color: white;
-}
-
-.cta-button.outline:hover {
-  background: white;
-  color: var(--accent-color);
-}
-
-@media (max-width: 768px) {
-  .page-title {
-    font-size: 2.2rem;
-  }
-  
-  .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .education-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  
-  .achievements-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .cta-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .cta-button {
-    width: 100%;
-    max-width: 300px;
-  }
-}
+<style>
 </style>

@@ -1,4 +1,5 @@
-
+import path from 'node:path'
+import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Markdown from 'vite-plugin-md'
@@ -11,5 +12,11 @@ export default defineConfig({
       include: [/\.vue$/, /\.md$/],
     }),
     Markdown(),
+    tailwindcss()
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 })
