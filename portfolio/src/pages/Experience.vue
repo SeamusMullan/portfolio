@@ -46,21 +46,24 @@
                   <component :is="icons.GraduationCap" class="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
                 </div>
                 <div>
-                  <CardTitle class="text-2xl font-bold text-gray-900 dark:text-white">BSc (Hons) Computer Science</CardTitle>
-                  <p class="text-lg text-gray-700 dark:text-gray-300">Trinity College Dublin</p>
+                  <CardTitle class="text-2xl font-bold text-gray-900 dark:text-white">BSc Computer Science & Software Engineering</CardTitle>
+                  <p class="text-lg text-gray-700 dark:text-gray-300">Maynooth University</p>
                 </div>
               </div>
             </div>
             <CardContent class="p-6 space-y-3">
               <div class="flex items-center justify-between text-sm text-muted-foreground">
-                <span>Expected Graduation: May 2026</span>
-                <span>Dublin, Ireland</span>
+                <span>Expected Graduation: May 2027</span>
+                <span>Kildare, Ireland</span>
               </div>
               <p class="text-base">
                 Currently pursuing a degree in Computer Science & Software Engineering.
               </p>
               <div class="text-sm">
                 <span class="font-semibold">Completed Modules:</span> Software Testing, DSA, Web Development, Computer Architecture, Operating Systems, Databases  
+              </div>
+              <div class="text-sm">
+                <span class="font-semibold">Some Title:</span> Some Description
               </div>
             </CardContent>
           </Card>
@@ -100,7 +103,7 @@
 <script setup lang="ts">
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight } from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
+import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight, Gamepad2, ScrollText, Cog } from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
 import { ref } from 'vue';
 
 const icons = {
@@ -111,7 +114,10 @@ const icons = {
   Cpu,
   Users,
   Palette,
-  ArrowUpRight
+  ArrowUpRight,
+  Gamepad2,
+  ScrollText,
+  Cog
 };
 
 interface Skill {
@@ -130,14 +136,14 @@ interface Achievement {
 }
 
 const skills = ref<Skill[]>([
-  { name: 'C / C++', description: 'Low-level systems programming, real-time audio (JUCE), performance optimization.', icon: icons.Cpu },
-  { name: 'JavaScript / TypeScript', description: 'Full-stack web development, Vue.js, Node.js, modern frontend frameworks.', icon: icons.Code },
-  { name: 'Python', description: 'Scripting, automation, data analysis, and backend development with FastAPI.', icon: icons.Code },
-  { name: 'Version Control (Git)', description: 'Proficient with Git workflows, branching, merging, and collaboration on GitHub/GitLab.', icon: icons.Briefcase },
-  { name: 'UI/UX Design', description: 'Figma, Adobe XD, Photoshop. Creating intuitive and visually appealing user interfaces.', icon: icons.Palette },
-  { name: 'Agile Methodologies', description: 'Experience with Scrum and Kanban, iterative development, and collaborative teamwork.', icon: icons.Users },
+  { name: 'C / C++', description: 'Real-time audio processsing in JUCE, VST3 / AU Plugin Development. Have a look at DirektDSP', icon: icons.Cpu },
+  { name: 'JavaScript / TypeScript', description: 'Full-stack web development with Electron and Vite. See my project Juno!', icon: icons.Code },
+  { name: 'Python', description: 'Scripting and backend development with FastAPI. Used in my game candlz!', icon: icons.ScrollText },
+  { name: 'Version Control (Git)', description: 'Proficient with Git workflows and collaboration on GitHub/GitLab.', icon: icons.Briefcase },
+  { name: 'UI/UX Design', description: 'Figma, Adobe Photoshop and Illustrator. In depth understanding of music producer-centred software', icon: icons.Palette },
+  { name: 'CMake & Build Systems', description: 'Managing complex C++ projects and dependencies using CMake.', icon: icons.Cog },
+  { name: 'Game Development', description: 'Experience with tools like Blender and Unity (incl. C#).', icon: icons.Gamepad2 },
   { name: 'Problem Solving', description: 'Analytical thinking and creative solutions for complex technical challenges.', icon: icons.Award },
-  { name: 'CMake & Build Systems', description: 'Managing complex C++ projects and dependencies using CMake.', icon: icons.Cpu },
 ]);
 
 const achievements = ref<Achievement[]>([
@@ -150,9 +156,9 @@ const achievements = ref<Achievement[]>([
     linkText: 'Visit DirektDSP'
   },
   {
-    title: 'Serotonin Operating System',
+    title: 'Serotonin Operating System (Currently Closed Source)',
     date: '2023 - Present',
-    description: 'Core contributor to a custom x86-64 operating system built from scratch in C and Assembly. Focusing on kernel development, memory management, and system calls.',
+    description: 'A simple Operating System written for i686. Hobby project I\'m working on with another friend. Currently working on implementing paging and file reading / writing.',
     icon: icons.Cpu,
     link: 'https://github.com/seamusmullan/serotonin',
     linkText: 'View on GitHub'
@@ -160,7 +166,7 @@ const achievements = ref<Achievement[]>([
   {
     title: 'Portfolio Website (This one!)',
     date: '2024',
-    description: 'Designed and developed this portfolio using Vue.js, TypeScript, and Tailwind CSS, showcasing my projects and skills. Deployed with Vercel.',
+    description: 'Designed and developed this portfolio using Vue.js, TypeScript, shadcn and Tailwind CSS. Deployed on my own webserver (DNS w/Cloudflare).',
     icon: icons.Palette,
     link: 'https://github.com/seamusmullan/portfolio',
     linkText: 'View Source Code'
