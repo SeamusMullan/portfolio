@@ -18,8 +18,8 @@
     </section>
 
     <!-- Main Content -->
-    <section class="w-full min-h-screen py-12">
-      <div class="flex flex-col lg:flex-row gap-8 w-full max-w-none mx-0 px-0">
+    <section class="w-full min-h-screen py-12 px-4">
+      <div class="flex flex-col lg:flex-row gap-8 w-full">
         <!-- Sidebar -->
         <aside class="w-full lg:w-80 flex-shrink-0 space-y-6">
           <!-- Search Bar -->
@@ -60,8 +60,12 @@
                 <AccordionContent>
                   <div class="space-y-1 pt-2">
                     <div v-for="tag in getTagsByCategory(cat.key)" :key="tag" class="flex items-center gap-2 py-1">
-                      <Checkbox :checked="selectedTags.includes(tag)" @update:checked="() => toggleFilter(tag)" />
-                      <span class="flex-1 text-sm">{{ tag }}</span>
+                      <Checkbox 
+                        :id="`checkbox-${tag}`"
+                        :checked="selectedTags.includes(tag)" 
+                        @update:checked="() => toggleFilter(tag)" 
+                      />
+                      <label :for="`checkbox-${tag}`" class="flex-1 text-sm cursor-pointer">{{ tag }}</label>
                       <span class="text-xs text-muted-foreground bg-muted rounded px-2 py-0.5">{{ getTagCount(tag) }}</span>
                     </div>
                   </div>
@@ -99,32 +103,35 @@
             </div>
           </div>
 
-          <!-- Projects Grid -->
-          <div v-if="filteredProjects.length" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-            <ProjectCard
-              v-for="project in filteredProjects"
-              :key="project.title"
-              :title="project.title"
-              :description="project.description"
-              :tags="project.tags"
-              :githubUrl="project.githubUrl"
-              :demoUrl="project.demoUrl"
-              :demoUrl_1="project.demoUrl_1"
-              :demoUrl_2="project.demoUrl_2"
-              :demoUrl_1_title="project.demoUrl_1_title"
-              :demoUrl_2_title="project.demoUrl_2_title"
-              :featured="project.featured"
-            />
-          </div>
+          <!-- Projects Container -->
+          <div class="w-full">
+            <!-- Projects Grid -->
+            <div v-if="filteredProjects.length > 0" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              <ProjectCard
+                v-for="project in filteredProjects"
+                :key="project.title"
+                :title="project.title"
+                :description="project.description"
+                :tags="project.tags"
+                :githubUrl="project.githubUrl"
+                :demoUrl="project.demoUrl"
+                :demoUrl_1="project.demoUrl_1"
+                :demoUrl_2="project.demoUrl_2"
+                :demoUrl_1_title="project.demoUrl_1_title"
+                :demoUrl_2_title="project.demoUrl_2_title"
+                :featured="project.featured"
+              />
+            </div>
 
-          <!-- No Results -->
-          <div v-else class="flex flex-col items-center justify-center bg-muted/30 border rounded-xl py-20 px-6 text-center">
-            <svg viewBox="0 0 20 20" fill="currentColor" class="w-16 h-16 text-muted-foreground mb-4">
-              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-            </svg>
-            <h3 class="text-2xl font-semibold mb-2">No projects found</h3>
-            <p class="text-base text-muted-foreground mb-6">Try adjusting your filters or search query</p>
-            <Button variant="secondary" size="lg" @click="resetFilters">Reset All Filters</Button>
+            <!-- No Results -->
+            <div v-else class="flex flex-col items-center justify-center bg-muted/30 border rounded-xl py-20 px-6 text-center" style="width: 100%;">
+              <svg viewBox="0 0 20 20" fill="currentColor" class="w-16 h-16 text-muted-foreground mb-4">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+              </svg>
+              <h3 class="text-2xl font-semibold mb-2">No projects found</h3>
+              <p class="text-base text-muted-foreground mb-6">Try adjusting your filters or search query</p>
+              <Button variant="secondary" size="lg" @click="resetFilters">Reset All Filters</Button>
+            </div>
           </div>
         </main>
       </div>
@@ -183,7 +190,9 @@ const getTagCount = (tag: string) => {
 };
 
 const filteredProjects = computed(() => {
-  let filtered = projects.value;
+  let filtered = [...projects.value];
+  
+  // Apply search filter
   if (searchQuery.value) {
     const query = searchQuery.value.toLowerCase();
     filtered = filtered.filter(project => 
@@ -192,20 +201,27 @@ const filteredProjects = computed(() => {
       project.tags.some(tag => tag.toLowerCase().includes(query))
     );
   }
+  
+  // Apply tag filters
   if (selectedTags.value.length > 0) {
     filtered = filtered.filter((project) =>
       selectedTags.value.some((tag) => project.tags.includes(tag))
     );
   }
+  
+  // Sort by featured status
   return filtered.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
 });
 
 const toggleFilter = (tag: string) => {
   const index = selectedTags.value.indexOf(tag);
+  
   if (index > -1) {
-    selectedTags.value.splice(index, 1);
+    // Remove tag
+    selectedTags.value = selectedTags.value.filter(t => t !== tag);
   } else {
-    selectedTags.value.push(tag);
+    // Add tag
+    selectedTags.value = [...selectedTags.value, tag];
   }
 };
 
@@ -220,15 +236,15 @@ const resetFilters = () => {
 
 const getTagVariant = (tag: string) => {
   if (["C++", "C", "Assembly", "Python", "TypeScript", "JavaScript", "Rust", "Java", "Go"].some((t) => tag.includes(t))) return "languages";
-  if (["Audio", "DSP", "Music Production", "FL Studio", "Ableton", "EDM", "Creative", "Real-time Audio", "VST", "AU", "Plugins"].some((t) => tag.includes(t))) return "audio";
+  if (["Audio", "DSP", "Music Production", "FL Studio", "Ableton", "EDM", "Creative", "Real-time Audio", "VST", "AU", "Plugins", "JUCE"].some((t) => tag.includes(t))) return "audio";
   if (["Vue.js", "React", "Next.js", "Frontend", "UI/UX", "Vite", "Electron", "HTML", "CSS", "Web", "Node.js", "FastAPI"].some((t) => tag.includes(t))) return "web";
-  if (["CMake", "JUCE", "npm", "bun", "Git", "Docker", "CLI", "Desktop", "Build Tools", "Development Tools"].some((t) => tag.includes(t))) return "tools";
+  if (["CMake", "npm", "bun", "Git", "Docker", "CLI", "Desktop", "Build Tools", "Development Tools", "Systems", "Fintech", "Algorithms"].some((t) => tag.includes(t))) return "tools";
   return "default";
 };
 
 onMounted(async () => {
   try {
-    const res = await fetch("/projects.json");
+    const res = await fetch("/projects_data.json");
     projects.value = await res.json();
   } catch (error) {
     console.error("Failed to load projects:", error);

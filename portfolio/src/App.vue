@@ -8,7 +8,7 @@ const route = useRoute()
 
 <template>
   <SidebarProvider>
-    <div class="flex min-h-screen bg-background">
+    <div class="flex min-h-screen bg-background w-full min-w-0">
       <Sidebar collapsible="icon" class="border-r">
         <SidebarHeader>
           <SidebarMenu>
@@ -58,7 +58,7 @@ const route = useRoute()
           </SidebarMenu>
         </SidebarFooter>
       </Sidebar>
-      <div class="flex-1 flex flex-col min-h-screen">
+      <div class="flex-1 w-full min-w-0 flex flex-col min-h-screen">
         <header class="sticky top-0 z-30 w-full border-b bg-background/95 backdrop-blur">
           <div class="flex items-center justify-between px-6 py-3">
             <SidebarTrigger class="md:hidden" />
@@ -73,7 +73,7 @@ const route = useRoute()
             </div>
           </div>
         </header>
-        <main class="flex-1 px-4 md:px-8 py-8">
+        <main class="flex-1 w-full min-w-0 px-4 md:px-8 py-8">
           <router-view />
         </main>
         <footer class="border-t bg-background/95 px-4 md:px-8 py-6">

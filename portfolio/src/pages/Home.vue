@@ -117,7 +117,7 @@ interface Project {
 
 const featuredProjects = ref<Project[]>([]);
 onMounted(async () => {
-  const res = await fetch("/projects.json");
+  const res = await fetch("/projects_data.json");
   const all = await res.json();
   featuredProjects.value = all.filter((p: Project) => p.featured);
 });
