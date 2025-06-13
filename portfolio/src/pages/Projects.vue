@@ -62,8 +62,8 @@
                     <div v-for="tag in getTagsByCategory(cat.key)" :key="tag" class="flex items-center gap-2 py-1">
                       <Checkbox 
                         :id="`checkbox-${tag}`"
-                        :checked="selectedTags.includes(tag)" 
-                        @update:checked="() => toggleFilter(tag)" 
+                        :checked="selectedTags.includes(tag)"
+                        @click="() => toggleFilter(tag)"
                       />
                       <label :for="`checkbox-${tag}`" class="flex-1 text-sm cursor-pointer">{{ tag }}</label>
                       <span class="text-xs text-muted-foreground bg-muted rounded px-2 py-0.5">{{ getTagCount(tag) }}</span>
@@ -205,7 +205,7 @@ const filteredProjects = computed(() => {
   // Apply tag filters
   if (selectedTags.value.length > 0) {
     filtered = filtered.filter((project) =>
-      selectedTags.value.some((tag) => project.tags.includes(tag))
+      selectedTags.value.every((tag) => project.tags.includes(tag))
     );
   }
   
@@ -215,13 +215,14 @@ const filteredProjects = computed(() => {
 
 const toggleFilter = (tag: string) => {
   const index = selectedTags.value.indexOf(tag);
-  
   if (index > -1) {
     // Remove tag
     selectedTags.value = selectedTags.value.filter(t => t !== tag);
+    // console.log(`Checkbox for tag '${tag}' unchecked.`);
   } else {
     // Add tag
     selectedTags.value = [...selectedTags.value, tag];
+    // console.log(`Checkbox for tag '${tag}' checked.`);
   }
 };
 
