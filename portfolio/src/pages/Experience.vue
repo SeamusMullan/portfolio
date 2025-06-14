@@ -24,7 +24,6 @@
         <!-- Work Experience Section -->
         <div class="w-full">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 pt-12">Work Experience</h2>
-          <h4 class="text-xl md:text-2xl text-center mb-6 ">Chronological Left to Right</h4>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
             <Card v-for="job in workExperience" :key="job.position" class="flex flex-col justtify-between hover:shadow-lg transition-shadow duration-300 ease-in-out">
               <CardHeader class="flex flex-col items-center gap-4 pb-2">
