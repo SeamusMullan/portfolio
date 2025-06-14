@@ -176,8 +176,6 @@ import { Button } from '@/components/ui/button';
 import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight, Gamepad2, ScrollText, Cog, Music, GraduationCapIcon} from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
 import { ref } from 'vue';
 
-import Timeline from '@/components/Timeline.vue'; // Importing the Timeline component
-
 const icons = {
   GraduationCap,
   Briefcase,
