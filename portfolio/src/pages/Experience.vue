@@ -20,6 +20,75 @@
     <!-- Main Content -->
     <section class="w-full">
       <div class="flex flex-col gap-16">
+
+        <!-- Work Experience Section -->
+        <div class="w-full">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 pt-12">Work Experience</h2>
+          <h4 class="text-xl md:text-2xl text-center mb-6 ">Chronological Left to Right</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+            <Card v-for="job in workExperience" :key="job.position" class="flex flex-col justtify-between hover:shadow-lg transition-shadow duration-300 ease-in-out">
+              <CardHeader class="flex flex-col items-center gap-4 pb-2">
+                <component :is="job.icon" class="w-8 h-8 text-emerald-500" />
+                <CardTitle class="text-xl font-semibold">{{ job.company }}</CardTitle>
+                <span class="text-sm text-muted-foreground">{{ job.position }}</span>
+                <span>{{ job.duration }}</span>
+              </CardHeader>
+              <CardContent class="flex-1 flex flex-col justify-between">
+                <!-- Description -->
+                <div class="mb-4">
+                  <p class="text-sm text-muted-foreground" v-html="job.description"></p>
+                </div>
+
+                <!-- Skills -->
+                <div class="mb-4">
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      v-for="skill in job.skills"
+                      :key="skill"
+                      class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded"
+                    >
+                      {{ skill }}
+                    </span>
+                  </div>
+                </div>
+
+                <!-- References & Links -->
+                <div class="grid grid-cols-1 gap-4 text-sm text-muted-foreground">
+
+                  
+                  <!-- Links -->
+                  <div class="flex justify-between items-center">
+                    
+                    <!-- References - if no info, show default text -->
+                    <div class="flex items-center gap-2 mb-2">
+                      <span v-if="job.referenceInfo">Reference Info: {{ job.referenceInfo }}</span>
+                      <span v-else>References available upon request.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                    <Button
+                      v-if="job.link"
+                      asChild
+                      variant="link"
+                      class="px-0 h-auto text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300"
+                    >
+                      <a
+                        :href="job.link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-black dark:text-white"
+                      >
+                        {{ job.linkText || 'Learn More' }}
+                        <ArrowUpRight class="w-4 h-4 ml-1" />
+                      </a>
+                    </Button>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
         <!-- Technical Skills Section -->
         <div class="w-full">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 pt-12">Technical Skills</h2>
@@ -30,11 +99,12 @@
                 <CardTitle class="text-xl font-semibold">{{ skill.name }}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p class="text-sm text-muted-foreground">{{ skill.description }}</p>
+                <p class="text-sm text-muted-foreground" v-html="skill.description"></p>
               </CardContent>
             </Card>
           </div>
         </div>
+
 
         <!-- Education Section -->
         <div class="w-full max-w-3xl mx-auto">
@@ -103,8 +173,10 @@
 <script setup lang="ts">
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight, Gamepad2, ScrollText, Cog } from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
+import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight, Gamepad2, ScrollText, Cog, Music, GraduationCapIcon} from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
 import { ref } from 'vue';
+
+import Timeline from '@/components/Timeline.vue'; // Importing the Timeline component
 
 const icons = {
   GraduationCap,
@@ -117,7 +189,9 @@ const icons = {
   ArrowUpRight,
   Gamepad2,
   ScrollText,
-  Cog
+  Cog,
+  Music,
+  GraduationCapIcon
 };
 
 interface Skill {
@@ -134,6 +208,52 @@ interface Achievement {
   link?: string;
   linkText?: string;
 }
+
+interface WorkExperience {
+  company: string;
+  position: string;
+  duration: string;
+  description: string;
+  icon: any;
+  skills?: string[]; // Optional skills related to the job
+  link?: string;
+  linkText?: string;
+  reference?: string;
+  referenceInfo?: string;
+}
+
+const workExperience = ref<WorkExperience[]>([
+  {
+    company: 'Maynooth University',
+    position: 'Summer Camp Demonstrator 2024',
+    duration: 'Jul 2024 · 1 mo',
+    description: 'Created and ran a session teaching Blender (3D modelling).<br>Assisted other demonstrators in the running of their sessions.<br>Assisted the kids with any issues or questions they had in relation to the session.<br>Ensured that kids were behaving throughout the camp.<br><br>',
+    skills: ['Blender', '3D Modeling', 'Teaching'],
+    icon: icons.GraduationCap,
+    reference: 'Coordinator',
+    referenceInfo: 'Available on request'
+  },
+  {
+  company: 'Kirby Group Engineering',
+  position: 'BIM Student Placement',
+  duration: 'Jul 2024 - Aug 2024 · 2 mos',
+  description: '6 Week Student Placement.<br>Creating 2D Drawings packs for Tool Install in Autodesk Revit.<br>Finding and fixing clashes in Autodesk Navisworks. <br>Developing Automation scripts for Excel (Typescript / ExcelScript). <br>Collaborating with others on BIM Team with Autodesk Vault & BIM360.',
+  skills: ["Revit", "Autodesk Software", "Building Information Modeling", "Microsoft Office", "Teamwork", "Navisworks", "Microsoft Excel", "TypeScript", "Autodesk Revit"],
+  icon: icons.Cog,
+  reference: 'Supervisor',
+  referenceInfo: 'Available on request'
+  },
+  {
+    company: 'DirektDSP',
+    position: 'Founder',
+    duration: 'Jan 2023 - Present · 2 yrs 6 mos',
+    description: 'Independently started an Audio Software Company with the goal of creating easy-to-use and modern music production software. We currently have 3 released products with more on the way and have amassed over 10,000 downloads on all of our products combined.',
+    skills: ["C++", "Digital Signal Processing", "Initiative", "Start-up Leadership", "Adobe Photoshop", "Digital Audio", "Git", "GitHub"],
+    icon: icons.Music,
+    link: 'https://direktdsp.com',
+    linkText: 'Visit DirektDSP'
+  },
+]);
 
 const skills = ref<Skill[]>([
   { name: 'C / C++', description: 'Real-time audio processsing in JUCE, VST3 / AU Plugin Development. Have a look at DirektDSP', icon: icons.Cpu },
