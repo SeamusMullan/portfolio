@@ -32,14 +32,26 @@
 
         <div class="w-full">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 pt-12 text-rose-800 dark:text-rose-200">Get In Touch</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
             <Card v-for="contact in contactInfo" :key="contact.platform" class="hover:shadow-lg hover:shadow-rose-200/50 dark:hover:shadow-rose-900/20 transition-all duration-300 ease-in-out border-rose-100 dark:border-rose-800">
               <CardHeader class="flex flex-row items-center gap-4 pb-2">
                 <component :is="contact.platformIcon" class="w-8 h-8 text-rose-500 dark:text-rose-400" />
                 <CardTitle class="text-xl font-semibold text-rose-900 dark:text-rose-100">{{ contact.platform }}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p class="text-sm text-rose-700 dark:text-rose-300" v-html="contact.description"></p>
+              <CardContent class="flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="text-sm text-rose-700 dark:text-rose-300" v-html="contact.description"></p>
+                  <p class="mt-2 text-lg font-medium text-rose-800 dark:text-rose-200">
+                    {{ contact.username }}
+                    <span v-if="contact.link" class="text-rose-600 dark:text-rose-400 hover:underline">
+                      <a :href="contact.link" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1">
+                        <ArrowUpRight class="w-4 h-4" />
+                        {{ contact.linkText || 'Visit' }}
+                      </a>
+                    </span>
+                  </p>
+
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -80,6 +92,7 @@ interface ContactInfo {
   platformIcon?: FunctionalComponent; // Optional icon name if needed
   username: string;
   link?: string;
+  linkText?: string; // Optional text for the link
   description: string;
 }
 
@@ -88,6 +101,8 @@ const contactInfo = ref<ContactInfo[]>([
     platform: 'Email',
     platformIcon: icons.Mail,
     username: 'seamusmullan2023@gmail.com',
+    link: 'mailto:seamusmullan2023@gmail.com',
+    linkText: 'Email me',
     description: 'Feel free to reach out via email for any inquiries or just to say hi!'
   },
   {
@@ -95,6 +110,7 @@ const contactInfo = ref<ContactInfo[]>([
     username: 'Seamus Mullan',
     platformIcon: icons.Linkedin,
     link: 'https://www.linkedin.com/in/seamusmullan/',
+    linkText: 'Connect with me',
     description: 'Connect with me on LinkedIn for professional inquiries and networking.'
   },
   {
@@ -102,6 +118,7 @@ const contactInfo = ref<ContactInfo[]>([
     platformIcon: icons.Github,
     username: '@seamusmullan',
     link: 'https://github.com/seamusmullan',
+    linkText: 'Follow me on GitHub',
     description: 'Follow me on GitHub for my latest projects and contributions.'
   }
 ]);
