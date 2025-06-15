@@ -65,7 +65,7 @@
     <!-- Featured Projects Section -->
     <section class="max-w-full mx-auto px-4 md:px-6">
       <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <ProjectCard
           v-for="project in featuredProjects"
           :key="project.title"
@@ -91,7 +91,7 @@
         <div class="mb-8 text-xl opacity-90 max-w-2xl mx-auto">Interested in working together? I'm always open to discussing new opportunities, whether it's audio software development, systems programming, or creative technology projects.</div>
         <div class="flex flex-wrap gap-4 justify-center">
           <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-3">
-            <a href="mailto:seamusmullan2023@gmail.com">Get In Touch</a>
+            <RouterLink to="/contact" class="text-black dark:text-white">Contact Me</RouterLink>
           </Button>
           <Button asChild variant="outline" size="lg" class="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-emerald-700">
             <a href="https://github.com/seamusmullan" target="_blank" rel="noopener" class="!text-black dark:!text-white">View GitHub</a>
