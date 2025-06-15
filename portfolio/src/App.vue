@@ -24,38 +24,54 @@ const route = useRoute()
             <SidebarGroupLabel>Main</SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
+                
+                <!-- Home -->
                 <SidebarMenuItem>
                   <SidebarMenuButton asChild :isActive="route.path === '/'">
                     <router-link to="/">Home</router-link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                
+                <!-- Contact -->
+                <SidebarMenuItem>
+                  <SidebarMenuButton asChild :isActive="route.path === '/contact'">
+                    <router-link to="/contact">Contact</router-link>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                
+                <!-- Projects -->
                 <SidebarMenuItem>
                   <SidebarMenuButton asChild :isActive="route.path.startsWith('/projects')">
                     <router-link to="/projects">Projects</router-link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                
+                <!-- Experience -->
                 <SidebarMenuItem>
                   <SidebarMenuButton asChild :isActive="route.path.startsWith('/experience')">
                     <router-link to="/experience">Experience</router-link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+
+                <!-- DirektDSP -->
                 <SidebarMenuItem>
                   <SidebarMenuButton asChild>
                     <a href="https://direktdsp.com" target="_blank" rel="noopener" class="text-black dark:text-white">DirektDSP</a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>
         </SidebarContent>
         <SidebarFooter>
-          <SidebarMenu>
+          <!-- <SidebarMenu>
             <SidebarMenuItem>
               <SidebarMenuButton asChild>
                 <a href="mailto:seamusmullan2023@gmail.com" class="w-full">Contact</a>
               </SidebarMenuButton>
             </SidebarMenuItem>
-          </SidebarMenu>
+          </SidebarMenu> -->
         </SidebarFooter>
       </Sidebar>
       <div class="flex-1 w-full min-w-0 flex flex-col min-h-screen">

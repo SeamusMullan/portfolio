@@ -25,7 +25,7 @@
         <div class="w-full">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 pt-12">Work Experience</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-            <Card v-for="job in workExperience" :key="job.position" class="flex flex-col justtify-between hover:shadow-lg transition-shadow duration-300 ease-in-out">
+            <Card v-for="job in workExperience" :key="job.position" class="flex flex-col justtify-between hover:shadow-lg hover:shadow-emerald-200/50 dark:hover:shadow-emerald-900/20 transition-all duration-300 ease-in-out border-emerald-100 dark:border-emerald-800">
               <CardHeader class="flex flex-col items-center gap-4 pb-2">
                 <component :is="job.icon" class="w-8 h-8 text-emerald-500" />
                 <CardTitle class="text-xl font-semibold">{{ job.company }}</CardTitle>
@@ -92,7 +92,7 @@
         <div class="w-full">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 pt-12">Technical Skills</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <Card v-for="skill in skills" :key="skill.name" class="hover:shadow-lg transition-shadow duration-300 ease-in-out">
+            <Card v-for="skill in skills" :key="skill.name" class="hover:shadow-lg hover:shadow-teal-200/50 dark:hover:shadow-teal-900/20 transition-all duration-300 ease-in-out border-teal-100 dark:border-teal-800">
               <CardHeader class="flex flex-row items-center gap-4 pb-2">
                 <component :is="skill.icon" class="w-8 h-8 text-emerald-500" />
                 <CardTitle class="text-xl font-semibold">{{ skill.name }}</CardTitle>
@@ -108,7 +108,7 @@
         <!-- Education Section -->
         <div class="w-full max-w-3xl mx-auto">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Education</h2>
-          <Card class="overflow-hidden shadow-lg">
+          <Card class="overflow-hidden shadow-lg hover:shadow-xl hover:shadow-cyan-200/50 dark:hover:shadow-cyan-900/20 transition-all duration-300 ease-in-out border-cyan-100 dark:border-cyan-800">
             <div class="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 p-6">
               <div class="flex items-center gap-4">
                 <div class="p-3 bg-white dark:bg-gray-950 rounded-lg shadow">
@@ -142,7 +142,7 @@
         <div class="w-full pb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Key Achievements</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card v-for="achievement in achievements" :key="achievement.title" class="hover:shadow-xl transition-shadow duration-300 ease-in-out">
+            <Card v-for="achievement in achievements" :key="achievement.title" class="hover:shadow-xl hover:shadow-emerald-200/50 dark:hover:shadow-emerald-900/20 transition-all duration-300 ease-in-out border-emerald-100 dark:border-emerald-800">
               <CardHeader class="flex items-start gap-4 pb-3">
                 <div class="p-2 bg-emerald-100 dark:bg-emerald-900/50 rounded-md mt-1">
                   <component :is="achievement.icon" class="w-6 h-6 text-emerald-600 dark:text-emerald-400" />

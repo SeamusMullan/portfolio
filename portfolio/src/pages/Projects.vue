@@ -1,18 +1,18 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-blue-600 via-purple-600 to-purple-800 dark:from-blue-900 dark:via-purple-900 dark:to-purple-950 text-white overflow-hidden rounded-lg">
-      <div class="absolute inset-0 bg-black/10 dark:bg-black/30"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10"></div>
+    <section class="relative bg-gradient-to-br from-yellow-300 via-orange-300 to-amber-600 dark:from-yellow-400 dark:via-orange-600 dark:to-amber-600 text-white overflow-hidden rounded-lg">
+      <div class="absolute inset-0 bg-black/5 dark:bg-black/20"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-black/5"></div>
       <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-8 leading-tight">
-          My <span class="bg-gradient-to-r from-yellow-300 via-pink-300 to-orange-300 bg-clip-text text-transparent">Projects</span>
+          My <span class="bg-gradient-to-r from-red-200 via-rose-200 to-pink-200 bg-clip-text text-transparent">Projects</span>
         </h1>
         <p class="text-xl md:text-2xl lg:text-3xl opacity-90 max-w-4xl mx-auto leading-relaxed font-light">
           A collection of technical and creative work spanning audio software, systems programming, and innovative web experiences
         </p>
         <div class="mt-12 flex flex-wrap gap-4 justify-center">
-          <div class="h-1 w-20 bg-gradient-to-r from-yellow-300 to-pink-300 rounded-full"></div>
+          <div class="h-1 w-20 bg-gradient-to-r from-red-400 to-pink-400 rounded-full"></div>
         </div>
       </div>
     </section>
@@ -23,7 +23,7 @@
         <!-- Sidebar -->
         <aside class="w-full lg:w-80 flex-shrink-0 space-y-6">
           <!-- Search Bar -->
-          <div class="bg-card rounded-xl border p-4 shadow-sm">
+          <div class="bg-card rounded-xl border border-amber-100 dark:border-amber-800 p-4 shadow-sm hover:shadow-lg hover:shadow-amber-200/50 dark:hover:shadow-amber-900/20 transition-all duration-300 ease-in-out">
             <div class="relative flex items-center">
               <svg class="absolute left-3 w-5 h-5 text-muted-foreground" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
@@ -42,7 +42,7 @@
           </div>
 
           <!-- Filters Section -->
-          <div class="bg-card rounded-xl border p-4 shadow-sm">
+          <div class="bg-card rounded-xl border border-amber-100 dark:border-amber-800 p-4 shadow-sm hover:shadow-lg hover:shadow-amber-200/50 dark:hover:shadow-amber-900/20 transition-all duration-300 ease-in-out">
             <div class="flex items-center justify-between mb-4 border-b pb-2">
               <h3 class="font-semibold text-base">Filter by Technology</h3>
               <Button v-if="selectedTags.length > 0" variant="outline" size="sm" @click="clearFilters">

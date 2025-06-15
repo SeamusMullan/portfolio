@@ -1,5 +1,5 @@
 <template>
-  <Card class="w-full shadow-sm border-muted-foreground/10">
+  <Card class="w-full shadow-sm hover:shadow-lg hover:shadow-amber-200/50 dark:hover:shadow-amber-900/20 transition-all duration-300 ease-in-out border-amber-100 dark:border-amber-800">
     <CardHeader class="flex flex-row items-center justify-between gap-2 pb-2">
       <div class="flex items-center gap-2">
         <CardTitle class="text-lg font-semibold">{{ title }}</CardTitle>
