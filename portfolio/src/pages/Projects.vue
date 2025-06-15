@@ -9,7 +9,10 @@
           My <span class="bg-gradient-to-r from-red-200 via-rose-200 to-pink-200 bg-clip-text text-transparent">Projects</span>
         </h1>
         <p class="text-xl md:text-2xl lg:text-3xl opacity-90 max-w-4xl mx-auto leading-relaxed font-light">
-          A collection of technical and creative work spanning audio software, systems programming, and innovative web experiences
+          A collection of my technical / creative work.
+        </p>
+        <p class="mt-4 text-lg md:text-xl lg:text-2xl font-light opacity-80">
+          Use filters to find specific languages, technologies, or types of projects.
         </p>
         <div class="mt-12 flex flex-wrap gap-4 justify-center">
           <div class="h-1 w-20 bg-gradient-to-r from-red-400 to-pink-400 rounded-full"></div>

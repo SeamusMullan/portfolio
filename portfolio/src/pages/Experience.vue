@@ -9,7 +9,7 @@
           My <span class="bg-gradient-to-r from-yellow-300 via-pink-300 to-orange-300 bg-clip-text text-transparent">Experience</span>
         </h1>
         <p class="text-xl md:text-2xl lg:text-3xl opacity-90 max-w-4xl mx-auto leading-relaxed font-light">
-          A timeline of my technical skills, educational background, and key achievements in software development and beyond.
+          A timeline of my technical skills, educational background, and key achievements in software development.
         </p>
         <div class="mt-12 flex flex-wrap gap-4 justify-center">
           <div class="h-1 w-20 bg-gradient-to-r from-yellow-300 to-pink-300 rounded-full"></div>
