@@ -102,7 +102,7 @@ const route = useRoute()
         <footer class="border-t bg-background/95 px-4 md:px-8 py-6">
           <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
             <div>
-              <span class="font-semibold">Seamus Mullan</span> &mdash; Computer Science Student & Creative Developer
+              <span class="font-semibold">Seamus Mullan</span> &mdash; Student & Software Developer
             </div>
             <div class="flex gap-4">
               <a href="https://github.com/seamusmullan" target="_blank" rel="noopener" class="fancy-underline underline-github text-muted-foreground hover:text-foreground">GitHub</a>
