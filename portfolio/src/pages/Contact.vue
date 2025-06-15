@@ -52,7 +52,6 @@
 
 <script setup lang="ts">
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight, Gamepad2, ScrollText, Cog, Music, GraduationCapIcon, Mail, Github, Linkedin} from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
 import { ref, type FunctionalComponent } from 'vue';
 
