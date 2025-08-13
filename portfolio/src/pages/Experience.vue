@@ -185,7 +185,7 @@
 <script setup lang="ts">
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight, Gamepad2, ScrollText, Cog, Music, GraduationCapIcon} from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
+import { GraduationCap, Briefcase, Award, Code, Cpu, Users, Palette, ArrowUpRight, Gamepad2, ScrollText, Cog, Music, GraduationCapIcon, FileQuestion} from 'lucide-vue-next'; // Assuming lucide-vue-next for icons
 import { ref } from 'vue';
 
 const icons = {
@@ -201,7 +201,8 @@ const icons = {
   ScrollText,
   Cog,
   Music,
-  GraduationCapIcon
+  GraduationCapIcon,
+  FileQuestion
 };
 
 interface Skill {
@@ -237,8 +238,8 @@ const workExperience = ref<WorkExperience[]>([
   company: 'DirektDSP',
     position: 'Founder',
     duration: 'Jan 2023 - Present · 2 yrs 6 mos',
-    description: 'Independently started an Audio Software Company with the goal of creating easy-to-use and modern music production software. We currently have 3 released products with more on the way and have amassed over 10,000 downloads on all of our products combined.',
-    skills: ["C++", "Digital Signal Processing", "Initiative", "Start-up Leadership", "Adobe Photoshop", "Digital Audio", "Git", "GitHub"],
+    description: 'Independently started an Audio Software Company with the goal of creating easy-to-use and modern music production software.<br><br>We currently have 3 released products with more on the way and have amassed over 10,000 downloads on all of our products combined.',
+    skills: ["C++", "DSP", "CMake", "JUCE", "Initiative", "Leadership", "Adobe Photoshop", "Figma", "Git", "GitHub", "Music Production", "Marketing"],
     icon: icons.Music,
     link: 'https://direktdsp.com',
     linkText: 'Visit DirektDSP'
@@ -276,14 +277,14 @@ const workExperience = ref<WorkExperience[]>([
 ]);
 
 const skills = ref<Skill[]>([
-  { name: 'C / C++', description: 'Real-time audio processsing in JUCE, VST3 / AU Plugin Development. Have a look at DirektDSP', icon: icons.Cpu },
-  { name: 'JavaScript / TypeScript', description: 'Full-stack web development with Electron and Vite. See my project Juno!', icon: icons.Code },
-  { name: 'Python', description: 'Scripting and backend development with FastAPI. Used in my game candlz!', icon: icons.ScrollText },
-  { name: 'Version Control (Git)', description: 'Proficient with Git workflows and collaboration on GitHub/GitLab.', icon: icons.Briefcase },
-  { name: 'UI/UX Design', description: 'Figma, Adobe Photoshop and Illustrator. In depth understanding of music producer-centred software', icon: icons.Palette },
-  { name: 'CMake & Build Systems', description: 'Managing complex C++ projects and dependencies using CMake.', icon: icons.Cog },
-  { name: 'Game Development', description: 'Experience with tools like Blender and Unity (incl. C#).', icon: icons.Gamepad2 },
-  { name: 'Problem Solving', description: 'Analytical thinking and creative solutions for complex technical challenges.', icon: icons.Award },
+  { name: 'C / C++', description: 'Real-time audio processsing in JUCE, VST3 / AU Plugin Development.', icon: icons.Cpu },
+  { name: 'JavaScript / TypeScript', description: 'Full-stack web development with Electron, Vite & React/Vue.', icon: icons.Code },
+  { name: 'Python', description: 'Scripting and backend development with FastAPI.', icon: icons.ScrollText },
+  { name: 'Version Control (Git)', description: 'Proficient with Git workflows and collaboration & CI/CD on GitHub.', icon: icons.Briefcase },
+  { name: 'UI/UX Design', description: 'Figma, Adobe Photoshop and Illustrator. Very good understanding of UI/UX principles', icon: icons.Palette },
+  { name: 'CMake & CI/CD', description: 'Currently manage my C++ projects using CMake. Integrated into GitHub Actions.', icon: icons.Cog },
+  { name: 'Game Development', description: 'Experience with Blender / Unity. Worked with C# on multiple projects.', icon: icons.Gamepad2 },
+  { name: 'Problem Solving', description: 'Strong ability to understand & work through complex challenges.', icon: icons.FileQuestion },
 ]);
 
 const achievements = ref<Achievement[]>([
@@ -296,9 +297,9 @@ const achievements = ref<Achievement[]>([
     linkText: 'Visit DirektDSP'
   },
   {
-    title: 'Serotonin Operating System (Currently Closed Source)',
+    title: 'Serotonin Operating System',
     date: '2023 - Present',
-    description: 'A simple Operating System written for i686. Hobby project I\'m working on with another friend. Currently working on implementing paging and file reading / writing.',
+    description: 'A simple Operating System written in C (currently closed source). Hobby project I\'m working on with friends. My contributions mainly include user space programs and small kernel fixes.',
     icon: icons.Cpu,
     link: 'https://github.com/seamusmullan/serotonin',
     linkText: 'View on GitHub'
