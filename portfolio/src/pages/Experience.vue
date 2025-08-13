@@ -128,11 +128,25 @@
               <p class="text-base">
                 Currently pursuing a degree in Computer Science & Software Engineering.
               </p>
-              <div class="text-sm">
-                <span class="font-semibold">Completed Modules:</span> Software Testing, DSA, Web Development, Computer Architecture, Operating Systems, Databases  
-              </div>
-              <div class="text-sm">
-                <span class="font-semibold">Some Title:</span> Some Description
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="text-sm">
+                  <span class="font-semibold">Completed Modules:</span>
+                  <div>
+                    <ul>
+                      <li>Software Testing</li>
+                      <li>Data Structures and Algorithms</li>
+                      <li>Web Development (React)</li>
+                    </ul>
+                    <ul>
+                      <li>Computer Architecture</li>
+                      <li>Operating Systems</li>
+                      <li>UI/UX Design</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text-sm">
+                  <span class="font-semibold">Target Grade:</span> First Class Honours (1:1)
+                </div>
               </div>
             </CardContent>
           </Card>
