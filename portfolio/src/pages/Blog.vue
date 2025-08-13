@@ -8,4 +8,8 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// Dynamically render all the saved blog posts (available in blogs_data.json)
+// see Projects.vue for implementation of dynamic project rendering stuff.
+// Difference is i need to make blog PAGES for each entry of data.. Maybe i can pretend its a page and just use a big ol modal...?
+</script>
