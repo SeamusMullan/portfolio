@@ -128,30 +128,29 @@
               <p class="text-base">
                 Currently pursuing a degree in Computer Science & Software Engineering.
               </p>
+              <span class="font-semibold">Completed Modules:</span>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="text-sm">
-                  <span class="font-semibold">Completed Modules:</span>
-                  <div>
                     <ul>
                       <li>Software Testing</li>
                       <li>Data Structures and Algorithms</li>
                       <li>Web Development (React)</li>
                     </ul>
+                </div>
+                <div class="text-sm">
                     <ul>
                       <li>Computer Architecture</li>
                       <li>Operating Systems</li>
                       <li>UI/UX Design</li>
                     </ul>
                   </div>
-                </div>
-                <div class="text-sm">
-                  <span class="font-semibold">Target Grade:</span> First Class Honours (1:1)
-                </div>
+              </div>
+              <div class="text-sm">
+                <span class="font-semibold">Target Grade:</span> First Class Honours (1:1)
               </div>
             </CardContent>
           </Card>
         </div>
-
         <!-- Key Achievements Section -->
         <div class="w-full pb-12">
           <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Key Achievements</h2>
@@ -235,6 +234,36 @@ interface WorkExperience {
 
 const workExperience = ref<WorkExperience[]>([
   {
+  company: 'DirektDSP',
+    position: 'Founder',
+    duration: 'Jan 2023 - Present · 2 yrs 6 mos',
+    description: 'Independently started an Audio Software Company with the goal of creating easy-to-use and modern music production software. We currently have 3 released products with more on the way and have amassed over 10,000 downloads on all of our products combined.',
+    skills: ["C++", "Digital Signal Processing", "Initiative", "Start-up Leadership", "Adobe Photoshop", "Digital Audio", "Git", "GitHub"],
+    icon: icons.Music,
+    link: 'https://direktdsp.com',
+    linkText: 'Visit DirektDSP'
+  },
+  {
+    company: 'Maynooth University',
+    position: 'Summer Camp Demonstrator 2025',
+    duration: 'Jul 2025 · 2 mos',
+    description: 'Created and ran sessions teaching Blender and Arduino UNOs.<br>Assisted demonstrators in running of their own sessions.<br>Helped kids work throughout the camp / guiding them.<br>Monitored behaviour of kids throughout camp.<br><br>',
+    skills: ['Blender', '3D Modeling', 'Arduino Uno', 'Teamwork', 'Teaching'],
+    icon: icons.GraduationCap,
+    reference: 'Coordinator',
+    referenceInfo: 'Available on request'
+  },
+  {
+    company: 'Kirby Group Engineering',
+    position: 'BIM Student Placement',
+    duration: 'Jul 2024 - Aug 2024 · 2 mos',
+    description: '6 Week Student Placement.<br>Creating 2D Drawings packs for Tool Install in Autodesk Revit.<br>Finding and fixing clashes in Autodesk Navisworks. <br>Developing Automation scripts for Excel (Typescript / ExcelScript). <br>Collaborating with others on BIM Team with Autodesk Vault & BIM360.',
+    skills: ["Revit", "Autodesk Software", "Building Information Modeling", "Microsoft Office", "Teamwork", "Navisworks", "Microsoft Excel", "TypeScript", "Autodesk Revit"],
+    icon: icons.Cog,
+    reference: 'Supervisor',
+    referenceInfo: 'Available on request'
+  },
+  {
     company: 'Maynooth University',
     position: 'Summer Camp Demonstrator 2024',
     duration: 'Jul 2024 · 1 mo',
@@ -243,26 +272,6 @@ const workExperience = ref<WorkExperience[]>([
     icon: icons.GraduationCap,
     reference: 'Coordinator',
     referenceInfo: 'Available on request'
-  },
-  {
-  company: 'Kirby Group Engineering',
-  position: 'BIM Student Placement',
-  duration: 'Jul 2024 - Aug 2024 · 2 mos',
-  description: '6 Week Student Placement.<br>Creating 2D Drawings packs for Tool Install in Autodesk Revit.<br>Finding and fixing clashes in Autodesk Navisworks. <br>Developing Automation scripts for Excel (Typescript / ExcelScript). <br>Collaborating with others on BIM Team with Autodesk Vault & BIM360.',
-  skills: ["Revit", "Autodesk Software", "Building Information Modeling", "Microsoft Office", "Teamwork", "Navisworks", "Microsoft Excel", "TypeScript", "Autodesk Revit"],
-  icon: icons.Cog,
-  reference: 'Supervisor',
-  referenceInfo: 'Available on request'
-  },
-  {
-    company: 'DirektDSP',
-    position: 'Founder',
-    duration: 'Jan 2023 - Present · 2 yrs 6 mos',
-    description: 'Independently started an Audio Software Company with the goal of creating easy-to-use and modern music production software. We currently have 3 released products with more on the way and have amassed over 10,000 downloads on all of our products combined.',
-    skills: ["C++", "Digital Signal Processing", "Initiative", "Start-up Leadership", "Adobe Photoshop", "Digital Audio", "Git", "GitHub"],
-    icon: icons.Music,
-    link: 'https://direktdsp.com',
-    linkText: 'Visit DirektDSP'
   },
 ]);
 
