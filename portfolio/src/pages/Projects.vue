@@ -307,14 +307,14 @@ const filteredProjects = computed(() => {
       (project) =>
         project.title.toLowerCase().includes(query) ||
         project.description.toLowerCase().includes(query) ||
-        project.tags.some((tag) => tag.toLowerCase().includes(query))
+        project.tags.some((tag) => tag.toLowerCase().includes(query)),
     );
   }
 
   // Apply tag filters
   if (selectedTags.value.length > 0) {
     filtered = filtered.filter((project) =>
-      selectedTags.value.every((tag) => project.tags.includes(tag))
+      selectedTags.value.every((tag) => project.tags.includes(tag)),
     );
   }
 
@@ -437,8 +437,7 @@ onMounted(async () => {
       },
       {
         title: "Project B",
-        description:
-          "Description for Project B",
+        description: "Description for Project B",
         tags: ["Systems", "C", "Assembly"],
         featured: true,
         githubUrl: "https://github.com/seamusmullan/custom-os",
