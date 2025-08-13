@@ -1,15 +1,23 @@
 <script setup lang="ts">
-import type { FieldProps } from './interface'
-import { Checkbox } from '@/components/ui/checkbox'
-import { FormControl, FormDescription, FormField, FormItem, FormMessage } from '@/components/ui/form'
-import { Switch } from '@/components/ui/switch'
-import { computed } from 'vue'
-import AutoFormLabel from './AutoFormLabel.vue'
-import { beautifyObjectName, maybeBooleanishToBoolean } from './utils'
+import type { FieldProps } from "./interface";
+import { Checkbox } from "@/components/ui/checkbox";
+import {
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormMessage,
+} from "@/components/ui/form";
+import { Switch } from "@/components/ui/switch";
+import { computed } from "vue";
+import AutoFormLabel from "./AutoFormLabel.vue";
+import { beautifyObjectName, maybeBooleanishToBoolean } from "./utils";
 
-const props = defineProps<FieldProps>()
+const props = defineProps<FieldProps>();
 
-const booleanComponent = computed(() => props.config?.component === 'switch' ? Switch : Checkbox)
+const booleanComponent = computed(() =>
+  props.config?.component === "switch" ? Switch : Checkbox,
+);
 </script>
 
 <template>
@@ -20,10 +28,15 @@ const booleanComponent = computed(() => props.config?.component === 'switch' ? S
           <slot v-bind="slotProps">
             <component
               :is="booleanComponent"
-              :disabled="maybeBooleanishToBoolean(config?.inputProps?.disabled) ?? disabled"
+              :disabled="
+                maybeBooleanishToBoolean(config?.inputProps?.disabled) ??
+                disabled
+              "
               :name="slotProps.componentField.name"
               :model-value="slotProps.componentField.modelValue"
-              @update:model-value="slotProps.componentField['onUpdate:modelValue']"
+              @update:model-value="
+                slotProps.componentField['onUpdate:modelValue']
+              "
             />
           </slot>
         </FormControl>
