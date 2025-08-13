@@ -36,7 +36,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card class="text-center hover:shadow-lg hover:shadow-purple-200/50 dark:hover:shadow-purple-900/20 transition-all duration-300 ease-in-out border-purple-100 dark:border-purple-800">
           <CardHeader class="pb-4">
-            <div class="text-5xl mb-4">🎵</div>
+            <div class="text-5xl mb-4"></div>
             <CardTitle class="text-xl font-semibold mb-2">Real-Time Audio<br />Signal Processing</CardTitle>
           </CardHeader>
           <CardContent>
@@ -46,7 +46,7 @@
         </Card>
         <Card class="text-center hover:shadow-lg hover:shadow-purple-200/50 dark:hover:shadow-purple-900/20 transition-all duration-300 ease-in-out border-purple-100 dark:border-purple-800">
           <CardHeader class="pb-4">
-            <div class="text-5xl mb-4">💻</div>
+            <div class="text-5xl mb-4"></div>
             <CardTitle class="text-xl font-semibold mb-2">Low Level Coding<br />Systems Programming</CardTitle>
           </CardHeader>
           <CardContent>
@@ -56,7 +56,7 @@
         </Card>
         <Card class="text-center hover:shadow-lg hover:shadow-purple-200/50 dark:hover:shadow-purple-900/20 transition-all duration-300 ease-in-out border-purple-100 dark:border-purple-800">
           <CardHeader class="pb-4">
-            <div class="text-5xl mb-4">🎮</div>
+            <div class="text-5xl mb-4"></div>
             <CardTitle class="text-xl font-semibold mb-2">3D Modelling<br />Design Tools</CardTitle>
           </CardHeader>
           <CardContent>

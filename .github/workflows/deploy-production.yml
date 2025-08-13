@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: 📥 Checkout repository
+    - name: Checkout repository
       uses: actions/checkout@v4
       
-    - name: 🏗️ Setup Bun
+    - name: Setup Bun
       uses: oven-sh/setup-bun@v1
       with:
         bun-version: latest
         
-    - name: 📋 Debug - Check files
+    - name: Debug - Check files
       run: |
         echo "Current directory:"
         pwd
@@ -32,24 +32,24 @@ jobs:
         echo "Looking for bun.lock:"
         find . -name "bun.lock" -type f
         
-    - name: 📦 Install dependencies
+    - name: Install dependencies
       run: |
         cd portfolio
         bun install
       
-    - name: 🔍 Run type checking and build
+    - name: Run type checking and build
       run: |
         cd portfolio
         bun run build
       
-    - name: 📋 List build artifacts
+    - name: List build artifacts
       run: |
         echo "Build completed successfully!"
         ls -la portfolio/dist/
         echo "Total files in portfolio/dist/:"
         find portfolio/dist/ -type f | wc -l
         
-    - name: 📤 Upload build artifacts
+    - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: portfolio-dist
@@ -63,18 +63,18 @@ jobs:
     if: github.ref == 'refs/heads/main'
     
     steps:
-    - name: 📥 Download build artifacts
+    - name: Download build artifacts
       uses: actions/download-artifact@v4
       with:
         name: portfolio-dist
         path: dist/
         
-    - name: 📋 Verify downloaded files
+    - name: Verify downloaded files
       run: |
         echo "Files ready for deployment:"
         ls -la dist/
         
-    - name: 🚀 Deploy via FTP
+    - name: Deploy via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_HOST }}
@@ -89,7 +89,7 @@ jobs:
           **/.env*
           **/.DS_Store
         
-    - name: 🧹 Clean orphaned files  
+    - name: Clean orphaned files  
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_HOST }}

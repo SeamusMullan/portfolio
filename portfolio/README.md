@@ -1,41 +1,34 @@
 # Seamus Mullan - Portfolio Website
 
-A modern, responsive portfolio website built with Vue 3, TypeScript, and Vite.
+A modern, responsive portfolio website built with Vue, TypeScript, and Vite.
+**Live Site:** [portfolio.direktdsp.com](https://portfolio.direktdsp.com)
 
-🌐 **Live Site:** [portfolio.direktdsp.com](https://portfolio.direktdsp.com)
+## Features
 
-## 🚀 Features
+- Built with Vue 3 + TypeScript + Vite
+- Modern UI made using shadcn
+- Dynamic project loading from json
 
-- ⚡ Built with Vue 3 + TypeScript + Vite
-- 📱 Responsive design
-- 🎨 Modern UI with smooth animations
-- 📄 Dynamic project loading
-- 🔒 Secure and fast hosting
-
-## 🛠️ Development
+## Development
 
 ```bash
 # Install dependencies
-npm install
+bun install
 
 # Start development server
-npm run dev
+bun run dev
 
 # Build for production
-npm run build
+bun run build
 ```
 
-## 🚀 Deployment
+## Deployment
 
 This project uses automated CI/CD deployment to `portfolio.direktdsp.com`:
 
-- **Automatic deployment** on every push to `main` branch
-- **Manual deployment** available from GitHub Actions
-- Built files are automatically uploaded to cPanel hosting
-
 See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed setup instructions.
 
-## 📁 Project Structure
+## Project Structure
 
 - `src/pages/` - Vue page components
 - `src/components/` - Reusable Vue components  
