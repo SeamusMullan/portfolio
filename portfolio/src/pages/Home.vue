@@ -16,15 +16,15 @@
         </div>
         <div class="flex flex-wrap gap-6 justify-center">
           <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-4 shadow-xl">
-            <router-link to="/projects" class="text-black dark:text-white">View My Work</router-link>
-          </Button>
-
-          <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-4 shadow-xl">
-            <p class="line-through">Download my CV</p>
+            <router-link to="/experience" class="text-black dark:text-white">Work Experience</router-link>
           </Button>
           
-          <Button asChild variant="outline" size="lg" class="text-lg px-8 py-4 border-white/30 hover:bg-white/10 shadow-xl">
-            <a href="https://direktdsp.com" target="_blank" rel="noopener" class="text-black dark:text-white">Explore DirektDSP</a>
+          <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-4 shadow-xl">
+            <router-link to="/projects" class="text-black dark:text-white">My Projects</router-link>
+          </Button>
+          
+          <Button asChild variant="secondary" size="lg" class="text-lg px-8 py-4 shadow-xl">
+            <p class="line-through">Download my CV</p>
           </Button>
         </div>
       </div>
