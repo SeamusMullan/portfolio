@@ -123,6 +123,13 @@
                 :demoUrl_1_title="project.demoUrl_1_title"
                 :demoUrl_2_title="project.demoUrl_2_title"
                 :featured="project.featured"
+                :createdAt="project.createdAt"
+                :updatedAt="project.updatedAt"
+                :stars="project.stars"
+                :language="project.language"
+                :license="project.license"
+                :forks="project.forks"
+                :size="project.size"
               />
             </div>
 
@@ -161,6 +168,13 @@ interface Project {
   demoUrl_2?: string;
   demoUrl_1_title?: string;
   demoUrl_2_title?: string;
+  createdAt?: string;
+  updatedAt?: string;
+  stars?: number;
+  language?: string;
+  license?: string;
+  forks?: number;
+  size?: number;
 }
 
 const projects = ref<Project[]>([]);
