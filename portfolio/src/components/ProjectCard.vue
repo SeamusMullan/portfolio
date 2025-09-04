@@ -1,24 +1,15 @@
 <template>
-  <Card
-    class="w-full flex flex-col shadow-sm hover:shadow-lg hover:shadow-amber-200/50 dark:hover:shadow-amber-900/20 transition-all duration-300 ease-in-out border-amber-100 dark:border-amber-800 relative"
-  >
-    <template v-if="featured">
-      <div class="absolute top-0 left-0 w-full z-10">
-        <Badge
-          variant="secondary"
-          class="rounded-none w-full flex justify-center items-center py-2 text-xs"
+  <Card class="w-full shadow-sm hover:shadow-lg hover:shadow-amber-200/50 dark:hover:shadow-amber-900/20 transition-all duration-300 ease-in-out border-amber-100 dark:border-amber-800">
+    <CardHeader class="flex flex-row items-center justify-between gap-2 pb-2">
+      <div class="flex items-center gap-2">
+        <CardTitle class="text-lg font-semibold">{{ title }}</CardTitle>
+        <Badge v-if="featured" variant="secondary" class="ml-2"
           >✨ Featured</Badge
         >
       </div>
-    </template>
-    <CardHeader
-      :class="['flex flex-col items-start gap-1 pb-1', featured ? 'pt-8' : '']"
-    >
-      <div class="flex items-center w-full">
-        <CardTitle class="text-lg font-semibold">{{ title }}</CardTitle>
-      </div>
-      <div class="flex gap-2 w-full" v-if="githubUrl">
+      <div class="flex gap-2" v-if="githubUrl || demoUrl">
         <Button
+          v-if="githubUrl"
           asChild
           variant="ghost"
           size="icon"
@@ -31,6 +22,9 @@
               />
             </svg>
           </a>
+        </Button>
+        <Button v-if="demoUrl" asChild variant="outline" size="sm">
+          <a :href="demoUrl" target="_blank" rel="noopener" class="text-black dark:text-white">Demo</a>
         </Button>
       </div>
     </CardHeader>
@@ -93,17 +87,6 @@
         </div>
       </div>
     </CardContent>
-    <div v-if="demoUrl" class="flex justify-center mt-auto pb-4">
-      <Button asChild variant="outline" class="w-2/3 text-base py-3">
-        <a
-          :href="demoUrl"
-          target="_blank"
-          rel="noopener"
-          class="text-black dark:text-white"
-          >Demo</a
-        >
-      </Button>
-    </div>
   </Card>
 </template>
 
@@ -149,15 +132,6 @@ defineProps<{
   forks?: number;
   size?: number;
 }>();
-
-const showModal = ref(false);
-const maxLength = 180;
-const isTruncated = computed(
-  () => props.description && props.description.length > maxLength,
-);
-const truncatedDescription = computed(() =>
-  isTruncated.value ? props.description.slice(0, maxLength) : props.description,
-);
 </script>
 
 <style></style>
