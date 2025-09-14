@@ -26,8 +26,6 @@ bun run build
 
 This project uses automated CI/CD deployment to `portfolio.direktdsp.com`:
 
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed setup instructions.
-
 ## Project Structure
 
 - `src/pages/` - Vue page components
