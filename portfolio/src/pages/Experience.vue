@@ -49,7 +49,17 @@
               class="flex flex-col justtify-between hover:shadow-lg hover:shadow-emerald-200/50 dark:hover:shadow-emerald-900/20 transition-all duration-300 ease-in-out border-emerald-100 dark:border-emerald-800"
             >
               <CardHeader class="flex flex-col items-center gap-4 pb-2">
-                <component :is="job.icon" class="w-8 h-8 text-emerald-500" />
+                <img
+                  v-if="job.logoUrl"
+                  :src="job.logoUrl"
+                  :alt="job.logoAlt ?? job.company"
+                  class="h-8 w-auto max-w-[140px] object-contain"
+                />
+                <component
+                  v-else
+                  :is="job.icon"
+                  class="w-8 h-8 text-emerald-500"
+                />
                 <CardTitle class="text-xl font-semibold">{{
                   job.company
                 }}</CardTitle>
@@ -285,7 +295,6 @@ import {
   Music,
   GraduationCapIcon,
   FileQuestion,
-  Building2,
 } from "lucide-vue-next"; // Assuming lucide-vue-next for icons
 import { ref } from "vue";
 
@@ -304,7 +313,6 @@ const icons = {
   Music,
   GraduationCapIcon,
   FileQuestion,
-  Building2,
 };
 
 interface Skill {
@@ -327,7 +335,10 @@ interface WorkExperience {
   position: string;
   duration: string;
   description: string;
-  icon: any;
+  /** Lucide icon; omit when using logoUrl */
+  icon?: any;
+  logoUrl?: string;
+  logoAlt?: string;
   skills?: string[]; // Optional skills related to the job
   link?: string;
   linkText?: string;
@@ -339,22 +350,27 @@ const workExperience = ref<WorkExperience[]>([
   {
     company: "Intel",
     position: "Software Engineering Intern",
-    duration: "2026 - Present",
+    duration: "Jan 2026 - Present · 4 mos",
     description:
-      "Internship on a software engineering team, contributing to development workflows and collaborating with engineers on real-world projects.<br><br>",
+      "Software engineering internship focused on Intel NPUs, contributing to tooling and workflows around neural processing hardware.<br>Working closely with OpenVINO, Jenkins, Docker, LLVM, and CMake day to day.<br><br>",
     skills: [
+      "NPUs",
+      "OpenVINO",
+      "Jenkins",
+      "Docker",
+      "LLVM",
+      "CMake",
       "C++",
-      "Software Engineering",
-      "Collaboration",
-      "Problem Solving",
     ],
-    icon: icons.Building2,
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg",
+    logoAlt: "Intel",
     referenceInfo: "Available on request",
   },
   {
     company: "DirektDSP",
     position: "Founder",
-    duration: "Jan 2023 - Present · 2 yrs 6 mos",
+    duration: "Jan 2023 - Present · 3 yrs 3 mos",
     description:
       "Independently started an Audio Software Company with the goal of creating easy-to-use and modern music production software.<br><br>We currently have 3 released products with more on the way and have amassed over 10,000 downloads on all of our products combined.",
     skills: [
