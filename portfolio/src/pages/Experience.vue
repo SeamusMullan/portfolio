@@ -285,6 +285,7 @@ import {
   Music,
   GraduationCapIcon,
   FileQuestion,
+  Building2,
 } from "lucide-vue-next"; // Assuming lucide-vue-next for icons
 import { ref } from "vue";
 
@@ -303,6 +304,7 @@ const icons = {
   Music,
   GraduationCapIcon,
   FileQuestion,
+  Building2,
 };
 
 interface Skill {
@@ -335,6 +337,21 @@ interface WorkExperience {
 
 const workExperience = ref<WorkExperience[]>([
   {
+    company: "Intel",
+    position: "Software Engineering Intern",
+    duration: "2026 - Present",
+    description:
+      "Internship on a software engineering team, contributing to development workflows and collaborating with engineers on real-world projects.<br><br>",
+    skills: [
+      "C++",
+      "Software Engineering",
+      "Collaboration",
+      "Problem Solving",
+    ],
+    icon: icons.Building2,
+    referenceInfo: "Available on request",
+  },
+  {
     company: "DirektDSP",
     position: "Founder",
     duration: "Jan 2023 - Present · 2 yrs 6 mos",
@@ -357,6 +374,17 @@ const workExperience = ref<WorkExperience[]>([
     icon: icons.Music,
     link: "https://direktdsp.com",
     linkText: "Visit DirektDSP",
+  },
+  {
+    company: "Maynooth University",
+    position: "Undergraduate Lab Demonstrator",
+    duration: "Sept 2025 - Dec 2025 · 4 mos",
+    description:
+      "Demonstrated in undergraduate computer science labs during the semester.<br>Helped students with practical work, exercises, and debugging.<br>Assisted teaching staff in running sessions and supporting students in the lab.<br><br>",
+    skills: ["Teaching", "Computer Science", "Teamwork", "Communication"],
+    icon: icons.GraduationCap,
+    reference: "Coordinator",
+    referenceInfo: "Available on request",
   },
   {
     company: "Maynooth University",
